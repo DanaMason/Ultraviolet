@@ -1,0 +1,3746 @@
+For best: Search Epoch 7.
+
+========================================
+Epoch 1
+Hyperparameters:
+  num_epochs: 10
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 2
+  lora_alpha: 16
+  lora_dropout: 0.09992349636996908
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 1.7764073610305786
+  eval_accuracy: 0.705242334322453
+  eval_precision: 0.705242334322453
+  eval_recall: 0.705242334322453
+  eval_f1: 0.705242334322453
+  eval_session_acc: 0.25
+  eval_runtime: 114.3742
+  eval_samples_per_second: 8.839
+  eval_steps_per_second: 8.839
+  epoch: 1.0
+
+========================================
+Epoch 2
+Hyperparameters:
+  num_epochs: 10
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 2
+  lora_alpha: 16
+  lora_dropout: 0.09992349636996908
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 1.4175487756729126
+  eval_accuracy: 0.771513353115727
+  eval_precision: 0.771513353115727
+  eval_recall: 0.771513353115727
+  eval_f1: 0.771513353115727
+  eval_session_acc: 0.3333333333333333
+  eval_runtime: 114.6669
+  eval_samples_per_second: 8.817
+  eval_steps_per_second: 8.817
+  epoch: 2.0
+
+========================================
+Epoch 3
+Hyperparameters:
+  num_epochs: 10
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 2
+  lora_alpha: 16
+  lora_dropout: 0.09992349636996908
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 7.108015537261963
+  eval_accuracy: 0.6913946587537092
+  eval_precision: 0.6913946587537092
+  eval_recall: 0.6913946587537092
+  eval_f1: 0.6913946587537092
+  eval_session_acc: 0.2638888888888889
+  eval_runtime: 113.5371
+  eval_samples_per_second: 8.905
+  eval_steps_per_second: 8.905
+  epoch: 3.0
+
+========================================
+Epoch 4
+Hyperparameters:
+  num_epochs: 10
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 2
+  lora_alpha: 16
+  lora_dropout: 0.09992349636996908
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 1.026333212852478
+  eval_accuracy: 0.8140454995054401
+  eval_precision: 0.8140454995054401
+  eval_recall: 0.8140454995054401
+  eval_f1: 0.8140454995054401
+  eval_session_acc: 0.3472222222222222
+  eval_runtime: 113.5599
+  eval_samples_per_second: 8.903
+  eval_steps_per_second: 8.903
+  epoch: 4.0
+
+========================================
+Epoch 5
+Hyperparameters:
+  num_epochs: 10
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 2
+  lora_alpha: 16
+  lora_dropout: 0.09992349636996908
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 1.1175434589385986
+  eval_accuracy: 0.8219584569732937
+  eval_precision: 0.8219584569732937
+  eval_recall: 0.8219584569732937
+  eval_f1: 0.8219584569732937
+  eval_session_acc: 0.4027777777777778
+  eval_runtime: 113.6977
+  eval_samples_per_second: 8.892
+  eval_steps_per_second: 8.892
+  epoch: 5.0
+
+========================================
+Epoch 6
+Hyperparameters:
+  num_epochs: 10
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 2
+  lora_alpha: 16
+  lora_dropout: 0.09992349636996908
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 1.0789988040924072
+  eval_accuracy: 0.820969337289812
+  eval_precision: 0.820969337289812
+  eval_recall: 0.820969337289812
+  eval_f1: 0.820969337289812
+  eval_session_acc: 0.4305555555555556
+  eval_runtime: 113.795
+  eval_samples_per_second: 8.884
+  eval_steps_per_second: 8.884
+  epoch: 6.0
+
+========================================
+Epoch 7
+Hyperparameters:
+  num_epochs: 10
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 2
+  lora_alpha: 16
+  lora_dropout: 0.09992349636996908
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 1.827591896057129
+  eval_accuracy: 0.8229475766567754
+  eval_precision: 0.8229475766567754
+  eval_recall: 0.8229475766567754
+  eval_f1: 0.8229475766567754
+  eval_session_acc: 0.4722222222222222
+  eval_runtime: 113.6263
+  eval_samples_per_second: 8.898
+  eval_steps_per_second: 8.898
+  epoch: 7.0
+
+========================================
+Epoch 8
+Hyperparameters:
+  num_epochs: 10
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 2
+  lora_alpha: 16
+  lora_dropout: 0.09992349636996908
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 2.221339225769043
+  eval_accuracy: 0.8259149357072205
+  eval_precision: 0.8259149357072205
+  eval_recall: 0.8259149357072205
+  eval_f1: 0.8259149357072205
+  eval_session_acc: 0.5
+  eval_runtime: 113.9277
+  eval_samples_per_second: 8.874
+  eval_steps_per_second: 8.874
+  epoch: 8.0
+
+========================================
+Epoch 1
+Hyperparameters:
+  num_epochs: 6
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 2
+  lora_alpha: 16
+  lora_dropout: 0.08100086401516636
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 1.611822247505188
+  eval_accuracy: 0.7972304648862513
+  eval_precision: 0.7972304648862513
+  eval_recall: 0.7972304648862513
+  eval_f1: 0.7972304648862513
+  eval_session_acc: 0.4166666666666667
+  eval_runtime: 114.69
+  eval_samples_per_second: 8.815
+  eval_steps_per_second: 8.815
+  epoch: 1.0
+
+========================================
+Epoch 2
+Hyperparameters:
+  num_epochs: 6
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 2
+  lora_alpha: 16
+  lora_dropout: 0.08100086401516636
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 1.583876132965088
+  eval_accuracy: 0.8387734915924827
+  eval_precision: 0.8387734915924827
+  eval_recall: 0.8387734915924827
+  eval_f1: 0.8387734915924827
+  eval_session_acc: 0.4305555555555556
+  eval_runtime: 114.3033
+  eval_samples_per_second: 8.845
+  eval_steps_per_second: 8.845
+  epoch: 2.0
+
+========================================
+Epoch 3
+Hyperparameters:
+  num_epochs: 6
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 2
+  lora_alpha: 16
+  lora_dropout: 0.08100086401516636
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 1.923506736755371
+  eval_accuracy: 0.781404549950544
+  eval_precision: 0.781404549950544
+  eval_recall: 0.781404549950544
+  eval_f1: 0.781404549950544
+  eval_session_acc: 0.4166666666666667
+  eval_runtime: 114.644
+  eval_samples_per_second: 8.819
+  eval_steps_per_second: 8.819
+  epoch: 3.0
+
+========================================
+Epoch 4
+Hyperparameters:
+  num_epochs: 6
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 2
+  lora_alpha: 16
+  lora_dropout: 0.08100086401516636
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 1.6361316442489624
+  eval_accuracy: 0.8437190900098912
+  eval_precision: 0.8437190900098912
+  eval_recall: 0.8437190900098912
+  eval_f1: 0.8437190900098912
+  eval_session_acc: 0.5
+  eval_runtime: 114.2443
+  eval_samples_per_second: 8.849
+  eval_steps_per_second: 8.849
+  epoch: 4.0
+
+========================================
+Epoch 5
+Hyperparameters:
+  num_epochs: 6
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 2
+  lora_alpha: 16
+  lora_dropout: 0.08100086401516636
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 1.4778960943222046
+  eval_accuracy: 0.8536102868447082
+  eval_precision: 0.8536102868447082
+  eval_recall: 0.8536102868447082
+  eval_f1: 0.8536102868447082
+  eval_session_acc: 0.5277777777777778
+  eval_runtime: 114.2779
+  eval_samples_per_second: 8.847
+  eval_steps_per_second: 8.847
+  epoch: 5.0
+
+========================================
+Epoch 6
+Hyperparameters:
+  num_epochs: 6
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 2
+  lora_alpha: 16
+  lora_dropout: 0.08100086401516636
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 1.2333122491836548
+  eval_accuracy: 0.8654797230464887
+  eval_precision: 0.8654797230464887
+  eval_recall: 0.8654797230464887
+  eval_f1: 0.8654797230464887
+  eval_session_acc: 0.6111111111111112
+  eval_runtime: 114.1823
+  eval_samples_per_second: 8.854
+  eval_steps_per_second: 8.854
+  epoch: 6.0
+
+========================================
+Epoch 7
+Hyperparameters:
+  num_epochs: 6
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 2
+  lora_alpha: 16
+  lora_dropout: 0.08100086401516636
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 1.3889245986938477
+  eval_accuracy: 0.8714144411473789
+  eval_precision: 0.8714144411473789
+  eval_recall: 0.8714144411473789
+  eval_f1: 0.8714144411473789
+  eval_session_acc: 0.6527777777777778
+  eval_runtime: 113.9695
+  eval_samples_per_second: 8.871
+  eval_steps_per_second: 8.871
+  epoch: 7.0
+
+========================================
+Epoch 8
+Hyperparameters:
+  num_epochs: 6
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 2
+  lora_alpha: 16
+  lora_dropout: 0.08100086401516636
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 1.4142003059387207
+  eval_accuracy: 0.8674579624134521
+  eval_precision: 0.8674579624134521
+  eval_recall: 0.8674579624134521
+  eval_f1: 0.8674579624134521
+  eval_session_acc: 0.6111111111111112
+  eval_runtime: 114.475
+  eval_samples_per_second: 8.832
+  eval_steps_per_second: 8.832
+  epoch: 8.0
+
+========================================
+Epoch 1
+Hyperparameters:
+  num_epochs: 12
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 2
+  lora_alpha: 32
+  lora_dropout: 0.022816862862326016
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.7731539011001587
+  eval_accuracy: 0.8951533135509396
+  eval_precision: 0.8951533135509396
+  eval_recall: 0.8951533135509396
+  eval_f1: 0.8951533135509396
+  eval_session_acc: 0.5138888888888888
+  eval_runtime: 114.2025
+  eval_samples_per_second: 8.853
+  eval_steps_per_second: 8.853
+  epoch: 1.0
+
+========================================
+Epoch 2
+Hyperparameters:
+  num_epochs: 12
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 2
+  lora_alpha: 32
+  lora_dropout: 0.022816862862326016
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.6868726015090942
+  eval_accuracy: 0.904055390702275
+  eval_precision: 0.904055390702275
+  eval_recall: 0.904055390702275
+  eval_f1: 0.904055390702275
+  eval_session_acc: 0.5416666666666666
+  eval_runtime: 114.1686
+  eval_samples_per_second: 8.855
+  eval_steps_per_second: 8.855
+  epoch: 2.0
+
+========================================
+Epoch 3
+Hyperparameters:
+  num_epochs: 12
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 2
+  lora_alpha: 32
+  lora_dropout: 0.022816862862326016
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.7328491806983948
+  eval_accuracy: 0.9050445103857567
+  eval_precision: 0.9050445103857567
+  eval_recall: 0.9050445103857567
+  eval_f1: 0.9050445103857567
+  eval_session_acc: 0.5555555555555556
+  eval_runtime: 114.5109
+  eval_samples_per_second: 8.829
+  eval_steps_per_second: 8.829
+  epoch: 3.0
+
+========================================
+Epoch 4
+Hyperparameters:
+  num_epochs: 12
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 2
+  lora_alpha: 32
+  lora_dropout: 0.022816862862326016
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.7225044369697571
+  eval_accuracy: 0.9228486646884273
+  eval_precision: 0.9228486646884273
+  eval_recall: 0.9228486646884273
+  eval_f1: 0.9228486646884273
+  eval_session_acc: 0.6805555555555556
+  eval_runtime: 114.4456
+  eval_samples_per_second: 8.834
+  eval_steps_per_second: 8.834
+  epoch: 4.0
+
+========================================
+Epoch 5
+Hyperparameters:
+  num_epochs: 12
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 2
+  lora_alpha: 32
+  lora_dropout: 0.022816862862326016
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.6585926413536072
+  eval_accuracy: 0.9268051434223541
+  eval_precision: 0.9268051434223541
+  eval_recall: 0.9268051434223541
+  eval_f1: 0.9268051434223541
+  eval_session_acc: 0.6944444444444444
+  eval_runtime: 114.868
+  eval_samples_per_second: 8.801
+  eval_steps_per_second: 8.801
+  epoch: 5.0
+
+========================================
+Epoch 6
+Hyperparameters:
+  num_epochs: 12
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 2
+  lora_alpha: 32
+  lora_dropout: 0.022816862862326016
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.6964306235313416
+  eval_accuracy: 0.9297725024727992
+  eval_precision: 0.9297725024727992
+  eval_recall: 0.9297725024727992
+  eval_f1: 0.9297725024727992
+  eval_session_acc: 0.6805555555555556
+  eval_runtime: 114.5259
+  eval_samples_per_second: 8.828
+  eval_steps_per_second: 8.828
+  epoch: 6.0
+
+========================================
+Epoch 7
+Hyperparameters:
+  num_epochs: 12
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 2
+  lora_alpha: 32
+  lora_dropout: 0.022816862862326016
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.6815997958183289
+  eval_accuracy: 0.9307616221562809
+  eval_precision: 0.9307616221562809
+  eval_recall: 0.9307616221562809
+  eval_f1: 0.9307616221562809
+  eval_session_acc: 0.6944444444444444
+  eval_runtime: 115.4054
+  eval_samples_per_second: 8.76
+  eval_steps_per_second: 8.76
+  epoch: 7.0
+
+========================================
+Epoch 8
+Hyperparameters:
+  num_epochs: 12
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 2
+  lora_alpha: 32
+  lora_dropout: 0.022816862862326016
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.6812721490859985
+  eval_accuracy: 0.9307616221562809
+  eval_precision: 0.9307616221562809
+  eval_recall: 0.9307616221562809
+  eval_f1: 0.9307616221562809
+  eval_session_acc: 0.6944444444444444
+  eval_runtime: 115.3693
+  eval_samples_per_second: 8.763
+  eval_steps_per_second: 8.763
+  epoch: 8.0
+
+========================================
+Epoch 1
+Hyperparameters:
+  num_epochs: 5
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 2
+  lora_alpha: 16
+  lora_dropout: 0.07154171814624104
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.7249854803085327
+  eval_accuracy: 0.8961424332344213
+  eval_precision: 0.8961424332344213
+  eval_recall: 0.8961424332344213
+  eval_f1: 0.8961424332344213
+  eval_session_acc: 0.5138888888888888
+  eval_runtime: 114.6844
+  eval_samples_per_second: 8.815
+  eval_steps_per_second: 8.815
+  epoch: 1.0
+
+========================================
+Epoch 2
+Hyperparameters:
+  num_epochs: 5
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 2
+  lora_alpha: 16
+  lora_dropout: 0.07154171814624104
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.6841291189193726
+  eval_accuracy: 0.913946587537092
+  eval_precision: 0.913946587537092
+  eval_recall: 0.913946587537092
+  eval_f1: 0.913946587537092
+  eval_session_acc: 0.5694444444444444
+  eval_runtime: 114.6206
+  eval_samples_per_second: 8.82
+  eval_steps_per_second: 8.82
+  epoch: 2.0
+
+========================================
+Epoch 3
+Hyperparameters:
+  num_epochs: 5
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 2
+  lora_alpha: 16
+  lora_dropout: 0.07154171814624104
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.6842477917671204
+  eval_accuracy: 0.9159248269040554
+  eval_precision: 0.9159248269040554
+  eval_recall: 0.9159248269040554
+  eval_f1: 0.9159248269040554
+  eval_session_acc: 0.6111111111111112
+  eval_runtime: 114.5197
+  eval_samples_per_second: 8.828
+  eval_steps_per_second: 8.828
+  epoch: 3.0
+
+========================================
+Epoch 4
+Hyperparameters:
+  num_epochs: 5
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 2
+  lora_alpha: 16
+  lora_dropout: 0.07154171814624104
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.7004996538162231
+  eval_accuracy: 0.9258160237388724
+  eval_precision: 0.9258160237388724
+  eval_recall: 0.9258160237388724
+  eval_f1: 0.9258160237388724
+  eval_session_acc: 0.6527777777777778
+  eval_runtime: 114.844
+  eval_samples_per_second: 8.803
+  eval_steps_per_second: 8.803
+  epoch: 4.0
+
+========================================
+Epoch 5
+Hyperparameters:
+  num_epochs: 5
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 2
+  lora_alpha: 16
+  lora_dropout: 0.07154171814624104
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.6533365845680237
+  eval_accuracy: 0.9317507418397626
+  eval_precision: 0.9317507418397626
+  eval_recall: 0.9317507418397626
+  eval_f1: 0.9317507418397626
+  eval_session_acc: 0.7083333333333334
+  eval_runtime: 114.5134
+  eval_samples_per_second: 8.829
+  eval_steps_per_second: 8.829
+  epoch: 5.0
+
+========================================
+Epoch 6
+Hyperparameters:
+  num_epochs: 5
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 2
+  lora_alpha: 16
+  lora_dropout: 0.07154171814624104
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.6650813221931458
+  eval_accuracy: 0.9307616221562809
+  eval_precision: 0.9307616221562809
+  eval_recall: 0.9307616221562809
+  eval_f1: 0.9307616221562809
+  eval_session_acc: 0.6944444444444444
+  eval_runtime: 114.3386
+  eval_samples_per_second: 8.842
+  eval_steps_per_second: 8.842
+  epoch: 6.0
+
+========================================
+Epoch 7
+Hyperparameters:
+  num_epochs: 5
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 2
+  lora_alpha: 16
+  lora_dropout: 0.07154171814624104
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.6595908403396606
+  eval_accuracy: 0.9317507418397626
+  eval_precision: 0.9317507418397626
+  eval_recall: 0.9317507418397626
+  eval_f1: 0.9317507418397626
+  eval_session_acc: 0.6944444444444444
+  eval_runtime: 115.1211
+  eval_samples_per_second: 8.782
+  eval_steps_per_second: 8.782
+  epoch: 7.0
+
+========================================
+Epoch 8
+Hyperparameters:
+  num_epochs: 5
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 2
+  lora_alpha: 16
+  lora_dropout: 0.07154171814624104
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.6554943919181824
+  eval_accuracy: 0.9317507418397626
+  eval_precision: 0.9317507418397626
+  eval_recall: 0.9317507418397626
+  eval_f1: 0.9317507418397626
+  eval_session_acc: 0.6944444444444444
+  eval_runtime: 114.7883
+  eval_samples_per_second: 8.808
+  eval_steps_per_second: 8.808
+  epoch: 8.0
+
+========================================
+Epoch 1
+Hyperparameters:
+  num_epochs: 8
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 2
+  lora_alpha: 16
+  lora_dropout: 0.050883355950654845
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.8484514951705933
+  eval_accuracy: 0.8902077151335311
+  eval_precision: 0.8902077151335311
+  eval_recall: 0.8902077151335311
+  eval_f1: 0.8902077151335311
+  eval_session_acc: 0.4305555555555556
+  eval_runtime: 114.2576
+  eval_samples_per_second: 8.848
+  eval_steps_per_second: 8.848
+  epoch: 1.0
+
+========================================
+Epoch 2
+Hyperparameters:
+  num_epochs: 8
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 2
+  lora_alpha: 16
+  lora_dropout: 0.050883355950654845
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.9836376309394836
+  eval_accuracy: 0.8427299703264095
+  eval_precision: 0.8427299703264095
+  eval_recall: 0.8427299703264095
+  eval_f1: 0.8427299703264095
+  eval_session_acc: 0.5416666666666666
+  eval_runtime: 113.8415
+  eval_samples_per_second: 8.881
+  eval_steps_per_second: 8.881
+  epoch: 2.0
+
+========================================
+Epoch 3
+Hyperparameters:
+  num_epochs: 8
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 2
+  lora_alpha: 16
+  lora_dropout: 0.050883355950654845
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.966968297958374
+  eval_accuracy: 0.8526211671612265
+  eval_precision: 0.8526211671612265
+  eval_recall: 0.8526211671612265
+  eval_f1: 0.8526211671612265
+  eval_session_acc: 0.5694444444444444
+  eval_runtime: 114.3697
+  eval_samples_per_second: 8.84
+  eval_steps_per_second: 8.84
+  epoch: 3.0
+
+========================================
+Epoch 4
+Hyperparameters:
+  num_epochs: 8
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 2
+  lora_alpha: 16
+  lora_dropout: 0.050883355950654845
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.8893360495567322
+  eval_accuracy: 0.9198813056379822
+  eval_precision: 0.9198813056379822
+  eval_recall: 0.9198813056379822
+  eval_f1: 0.9198813056379822
+  eval_session_acc: 0.5694444444444444
+  eval_runtime: 114.4591
+  eval_samples_per_second: 8.833
+  eval_steps_per_second: 8.833
+  epoch: 4.0
+
+========================================
+Epoch 5
+Hyperparameters:
+  num_epochs: 8
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 2
+  lora_alpha: 16
+  lora_dropout: 0.050883355950654845
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 1.0689074993133545
+  eval_accuracy: 0.8565776458951533
+  eval_precision: 0.8565776458951533
+  eval_recall: 0.8565776458951533
+  eval_f1: 0.8565776458951533
+  eval_session_acc: 0.6527777777777778
+  eval_runtime: 114.3985
+  eval_samples_per_second: 8.838
+  eval_steps_per_second: 8.838
+  epoch: 5.0
+
+========================================
+Epoch 6
+Hyperparameters:
+  num_epochs: 8
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 2
+  lora_alpha: 16
+  lora_dropout: 0.050883355950654845
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 1.0527600049972534
+  eval_accuracy: 0.8654797230464887
+  eval_precision: 0.8654797230464887
+  eval_recall: 0.8654797230464887
+  eval_f1: 0.8654797230464887
+  eval_session_acc: 0.6527777777777778
+  eval_runtime: 114.3677
+  eval_samples_per_second: 8.84
+  eval_steps_per_second: 8.84
+  epoch: 6.0
+
+========================================
+Epoch 7
+Hyperparameters:
+  num_epochs: 8
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 2
+  lora_alpha: 16
+  lora_dropout: 0.050883355950654845
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 1.0575326681137085
+  eval_accuracy: 0.8644906033630069
+  eval_precision: 0.8644906033630069
+  eval_recall: 0.8644906033630069
+  eval_f1: 0.8644906033630069
+  eval_session_acc: 0.6666666666666666
+  eval_runtime: 115.2012
+  eval_samples_per_second: 8.776
+  eval_steps_per_second: 8.776
+  epoch: 7.0
+
+========================================
+Epoch 1
+Hyperparameters:
+  num_epochs: 3
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 4
+  lora_alpha: 2
+  lora_dropout: 0.03844569035562069
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 1.086287260055542
+  eval_accuracy: 0.7764589515331355
+  eval_precision: 0.7764589515331355
+  eval_recall: 0.7764589515331355
+  eval_f1: 0.7764589515331355
+  eval_session_acc: 0.3333333333333333
+  eval_runtime: 114.5803
+  eval_samples_per_second: 8.824
+  eval_steps_per_second: 8.824
+  epoch: 1.0
+
+========================================
+Epoch 1
+Hyperparameters:
+  num_epochs: 4
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 8
+  lora_alpha: 2
+  lora_dropout: 0.05910025381841767
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 1.067238688468933
+  eval_accuracy: 0.7863501483679525
+  eval_precision: 0.7863501483679525
+  eval_recall: 0.7863501483679525
+  eval_f1: 0.7863501483679525
+  eval_session_acc: 0.3333333333333333
+  eval_runtime: 115.4258
+  eval_samples_per_second: 8.759
+  eval_steps_per_second: 8.759
+  epoch: 1.0
+
+========================================
+Epoch 1
+Hyperparameters:
+  num_epochs: 10
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 4
+  lora_alpha: 4
+  lora_dropout: 0.028039888794869208
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.7293760180473328
+  eval_accuracy: 0.8951533135509396
+  eval_precision: 0.8951533135509396
+  eval_recall: 0.8951533135509396
+  eval_f1: 0.8951533135509396
+  eval_session_acc: 0.4861111111111111
+  eval_runtime: 115.3425
+  eval_samples_per_second: 8.765
+  eval_steps_per_second: 8.765
+  epoch: 1.0
+
+========================================
+Epoch 2
+Hyperparameters:
+  num_epochs: 10
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 4
+  lora_alpha: 4
+  lora_dropout: 0.028039888794869208
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.7425885200500488
+  eval_accuracy: 0.9070227497527201
+  eval_precision: 0.9070227497527201
+  eval_recall: 0.9070227497527201
+  eval_f1: 0.9070227497527201
+  eval_session_acc: 0.5277777777777778
+  eval_runtime: 115.3127
+  eval_samples_per_second: 8.767
+  eval_steps_per_second: 8.767
+  epoch: 2.0
+
+========================================
+Epoch 3
+Hyperparameters:
+  num_epochs: 10
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 4
+  lora_alpha: 4
+  lora_dropout: 0.028039888794869208
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.779861330986023
+  eval_accuracy: 0.9070227497527201
+  eval_precision: 0.9070227497527201
+  eval_recall: 0.9070227497527201
+  eval_f1: 0.9070227497527201
+  eval_session_acc: 0.5555555555555556
+  eval_runtime: 115.8236
+  eval_samples_per_second: 8.729
+  eval_steps_per_second: 8.729
+  epoch: 3.0
+
+========================================
+Epoch 4
+Hyperparameters:
+  num_epochs: 10
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 4
+  lora_alpha: 4
+  lora_dropout: 0.028039888794869208
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.8284140825271606
+  eval_accuracy: 0.9218595450049456
+  eval_precision: 0.9218595450049456
+  eval_recall: 0.9218595450049456
+  eval_f1: 0.9218595450049456
+  eval_session_acc: 0.625
+  eval_runtime: 114.8204
+  eval_samples_per_second: 8.805
+  eval_steps_per_second: 8.805
+  epoch: 4.0
+
+========================================
+Epoch 5
+Hyperparameters:
+  num_epochs: 10
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 4
+  lora_alpha: 4
+  lora_dropout: 0.028039888794869208
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.780123233795166
+  eval_accuracy: 0.9198813056379822
+  eval_precision: 0.9198813056379822
+  eval_recall: 0.9198813056379822
+  eval_f1: 0.9198813056379822
+  eval_session_acc: 0.6388888888888888
+  eval_runtime: 115.8691
+  eval_samples_per_second: 8.725
+  eval_steps_per_second: 8.725
+  epoch: 5.0
+
+========================================
+Epoch 6
+Hyperparameters:
+  num_epochs: 10
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 4
+  lora_alpha: 4
+  lora_dropout: 0.028039888794869208
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.7792004942893982
+  eval_accuracy: 0.9228486646884273
+  eval_precision: 0.9228486646884273
+  eval_recall: 0.9228486646884273
+  eval_f1: 0.9228486646884273
+  eval_session_acc: 0.625
+  eval_runtime: 115.9945
+  eval_samples_per_second: 8.716
+  eval_steps_per_second: 8.716
+  epoch: 6.0
+
+========================================
+Epoch 7
+Hyperparameters:
+  num_epochs: 10
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 4
+  lora_alpha: 4
+  lora_dropout: 0.028039888794869208
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.7748046517372131
+  eval_accuracy: 0.923837784371909
+  eval_precision: 0.923837784371909
+  eval_recall: 0.923837784371909
+  eval_f1: 0.923837784371909
+  eval_session_acc: 0.625
+  eval_runtime: 114.911
+  eval_samples_per_second: 8.798
+  eval_steps_per_second: 8.798
+  epoch: 7.0
+
+========================================
+Epoch 8
+Hyperparameters:
+  num_epochs: 10
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 4
+  lora_alpha: 4
+  lora_dropout: 0.028039888794869208
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.7773633003234863
+  eval_accuracy: 0.923837784371909
+  eval_precision: 0.923837784371909
+  eval_recall: 0.923837784371909
+  eval_f1: 0.923837784371909
+  eval_session_acc: 0.625
+  eval_runtime: 115.0947
+  eval_samples_per_second: 8.784
+  eval_steps_per_second: 8.784
+  epoch: 8.0
+
+========================================
+Epoch 1
+Hyperparameters:
+  num_epochs: 3
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 8
+  lora_alpha: 64
+  lora_dropout: 0.04975144380860794
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.7604401707649231
+  eval_accuracy: 0.8862512363996043
+  eval_precision: 0.8862512363996043
+  eval_recall: 0.8862512363996043
+  eval_f1: 0.8862512363996043
+  eval_session_acc: 0.4722222222222222
+  eval_runtime: 114.6386
+  eval_samples_per_second: 8.819
+  eval_steps_per_second: 8.819
+  epoch: 1.0
+
+========================================
+Epoch 1
+Hyperparameters:
+  num_epochs: 4
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 2
+  lora_alpha: 2
+  lora_dropout: 0.09243038694564111
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 1.1992733478546143
+  eval_accuracy: 0.7190900098911969
+  eval_precision: 0.7190900098911969
+  eval_recall: 0.7190900098911969
+  eval_f1: 0.7190900098911969
+  eval_session_acc: 0.2361111111111111
+  eval_runtime: 114.4755
+  eval_samples_per_second: 8.832
+  eval_steps_per_second: 8.832
+  epoch: 1.0
+
+========================================
+Epoch 1
+Hyperparameters:
+  num_epochs: 6
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 16
+  lora_alpha: 8
+  lora_dropout: 0.00040859929244563276
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.6506690382957458
+  eval_accuracy: 0.897131552917903
+  eval_precision: 0.897131552917903
+  eval_recall: 0.897131552917903
+  eval_f1: 0.897131552917903
+  eval_session_acc: 0.5
+  eval_runtime: 115.141
+  eval_samples_per_second: 8.781
+  eval_steps_per_second: 8.781
+  epoch: 1.0
+
+========================================
+Epoch 2
+Hyperparameters:
+  num_epochs: 6
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 16
+  lora_alpha: 8
+  lora_dropout: 0.00040859929244563276
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.6546939015388489
+  eval_accuracy: 0.9109792284866469
+  eval_precision: 0.9109792284866469
+  eval_recall: 0.9109792284866469
+  eval_f1: 0.9109792284866469
+  eval_session_acc: 0.5416666666666666
+  eval_runtime: 114.8023
+  eval_samples_per_second: 8.806
+  eval_steps_per_second: 8.806
+  epoch: 2.0
+
+========================================
+Epoch 3
+Hyperparameters:
+  num_epochs: 6
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 16
+  lora_alpha: 8
+  lora_dropout: 0.00040859929244563276
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.6377242803573608
+  eval_accuracy: 0.9188921859545005
+  eval_precision: 0.9188921859545005
+  eval_recall: 0.9188921859545005
+  eval_f1: 0.9188921859545005
+  eval_session_acc: 0.6111111111111112
+  eval_runtime: 114.9782
+  eval_samples_per_second: 8.793
+  eval_steps_per_second: 8.793
+  epoch: 3.0
+
+========================================
+Epoch 4
+Hyperparameters:
+  num_epochs: 6
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 16
+  lora_alpha: 8
+  lora_dropout: 0.00040859929244563276
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.664640486240387
+  eval_accuracy: 0.933728981206726
+  eval_precision: 0.933728981206726
+  eval_recall: 0.933728981206726
+  eval_f1: 0.933728981206726
+  eval_session_acc: 0.6944444444444444
+  eval_runtime: 114.845
+  eval_samples_per_second: 8.803
+  eval_steps_per_second: 8.803
+  epoch: 4.0
+
+========================================
+Epoch 5
+Hyperparameters:
+  num_epochs: 6
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 16
+  lora_alpha: 8
+  lora_dropout: 0.00040859929244563276
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.6562058329582214
+  eval_accuracy: 0.9287833827893175
+  eval_precision: 0.9287833827893175
+  eval_recall: 0.9287833827893175
+  eval_f1: 0.9287833827893175
+  eval_session_acc: 0.6805555555555556
+  eval_runtime: 115.3437
+  eval_samples_per_second: 8.765
+  eval_steps_per_second: 8.765
+  epoch: 5.0
+
+========================================
+Epoch 6
+Hyperparameters:
+  num_epochs: 6
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 16
+  lora_alpha: 8
+  lora_dropout: 0.00040859929244563276
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.6768286824226379
+  eval_accuracy: 0.9287833827893175
+  eval_precision: 0.9287833827893175
+  eval_recall: 0.9287833827893175
+  eval_f1: 0.9287833827893175
+  eval_session_acc: 0.6805555555555556
+  eval_runtime: 115.4761
+  eval_samples_per_second: 8.755
+  eval_steps_per_second: 8.755
+  epoch: 6.0
+
+========================================
+Epoch 7
+Hyperparameters:
+  num_epochs: 6
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 16
+  lora_alpha: 8
+  lora_dropout: 0.00040859929244563276
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.6675981879234314
+  eval_accuracy: 0.9287833827893175
+  eval_precision: 0.9287833827893175
+  eval_recall: 0.9287833827893175
+  eval_f1: 0.9287833827893175
+  eval_session_acc: 0.6666666666666666
+  eval_runtime: 115.3416
+  eval_samples_per_second: 8.765
+  eval_steps_per_second: 8.765
+  epoch: 7.0
+
+========================================
+Epoch 1
+Hyperparameters:
+  num_epochs: 11
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 32
+  lora_alpha: 32
+  lora_dropout: 0.012283651949505613
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.6576250791549683
+  eval_accuracy: 0.897131552917903
+  eval_precision: 0.897131552917903
+  eval_recall: 0.897131552917903
+  eval_f1: 0.897131552917903
+  eval_session_acc: 0.5138888888888888
+  eval_runtime: 115.4877
+  eval_samples_per_second: 8.754
+  eval_steps_per_second: 8.754
+  epoch: 1.0
+
+========================================
+Epoch 2
+Hyperparameters:
+  num_epochs: 11
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 32
+  lora_alpha: 32
+  lora_dropout: 0.012283651949505613
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.737964928150177
+  eval_accuracy: 0.904055390702275
+  eval_precision: 0.904055390702275
+  eval_recall: 0.904055390702275
+  eval_f1: 0.904055390702275
+  eval_session_acc: 0.5277777777777778
+  eval_runtime: 115.6366
+  eval_samples_per_second: 8.743
+  eval_steps_per_second: 8.743
+  epoch: 2.0
+
+========================================
+Epoch 3
+Hyperparameters:
+  num_epochs: 11
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 32
+  lora_alpha: 32
+  lora_dropout: 0.012283651949505613
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.6425285935401917
+  eval_accuracy: 0.9159248269040554
+  eval_precision: 0.9159248269040554
+  eval_recall: 0.9159248269040554
+  eval_f1: 0.9159248269040554
+  eval_session_acc: 0.5833333333333334
+  eval_runtime: 116.2772
+  eval_samples_per_second: 8.695
+  eval_steps_per_second: 8.695
+  epoch: 3.0
+
+========================================
+Epoch 4
+Hyperparameters:
+  num_epochs: 11
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 32
+  lora_alpha: 32
+  lora_dropout: 0.012283651949505613
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.7050192952156067
+  eval_accuracy: 0.9287833827893175
+  eval_precision: 0.9287833827893175
+  eval_recall: 0.9287833827893175
+  eval_f1: 0.9287833827893175
+  eval_session_acc: 0.6944444444444444
+  eval_runtime: 116.1636
+  eval_samples_per_second: 8.703
+  eval_steps_per_second: 8.703
+  epoch: 4.0
+
+========================================
+Epoch 5
+Hyperparameters:
+  num_epochs: 11
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 32
+  lora_alpha: 32
+  lora_dropout: 0.012283651949505613
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.6883493661880493
+  eval_accuracy: 0.9277942631058358
+  eval_precision: 0.9277942631058358
+  eval_recall: 0.9277942631058358
+  eval_f1: 0.9277942631058358
+  eval_session_acc: 0.6805555555555556
+  eval_runtime: 115.5677
+  eval_samples_per_second: 8.748
+  eval_steps_per_second: 8.748
+  epoch: 5.0
+
+========================================
+Epoch 6
+Hyperparameters:
+  num_epochs: 11
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 32
+  lora_alpha: 32
+  lora_dropout: 0.012283651949505613
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.6610041260719299
+  eval_accuracy: 0.9307616221562809
+  eval_precision: 0.9307616221562809
+  eval_recall: 0.9307616221562809
+  eval_f1: 0.9307616221562809
+  eval_session_acc: 0.6666666666666666
+  eval_runtime: 115.5859
+  eval_samples_per_second: 8.747
+  eval_steps_per_second: 8.747
+  epoch: 6.0
+
+========================================
+Epoch 7
+Hyperparameters:
+  num_epochs: 11
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 32
+  lora_alpha: 32
+  lora_dropout: 0.012283651949505613
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.656374990940094
+  eval_accuracy: 0.9307616221562809
+  eval_precision: 0.9307616221562809
+  eval_recall: 0.9307616221562809
+  eval_f1: 0.9307616221562809
+  eval_session_acc: 0.6805555555555556
+  eval_runtime: 115.6808
+  eval_samples_per_second: 8.74
+  eval_steps_per_second: 8.74
+  epoch: 7.0
+
+========================================
+Epoch 8
+Hyperparameters:
+  num_epochs: 11
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 32
+  lora_alpha: 32
+  lora_dropout: 0.012283651949505613
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.6555361747741699
+  eval_accuracy: 0.9307616221562809
+  eval_precision: 0.9307616221562809
+  eval_recall: 0.9307616221562809
+  eval_f1: 0.9307616221562809
+  eval_session_acc: 0.6805555555555556
+  eval_runtime: 115.618
+  eval_samples_per_second: 8.744
+  eval_steps_per_second: 8.744
+  epoch: 8.0
+
+========================================
+Epoch 1
+Hyperparameters:
+  num_epochs: 12
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 2
+  lora_alpha: 32
+  lora_dropout: 0.0708947194320872
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.7524619102478027
+  eval_accuracy: 0.8991097922848664
+  eval_precision: 0.8991097922848664
+  eval_recall: 0.8991097922848664
+  eval_f1: 0.8991097922848664
+  eval_session_acc: 0.5138888888888888
+  eval_runtime: 115.2368
+  eval_samples_per_second: 8.773
+  eval_steps_per_second: 8.773
+  epoch: 1.0
+
+========================================
+Epoch 2
+Hyperparameters:
+  num_epochs: 12
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 2
+  lora_alpha: 32
+  lora_dropout: 0.0708947194320872
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.7374528646469116
+  eval_accuracy: 0.9090009891196835
+  eval_precision: 0.9090009891196835
+  eval_recall: 0.9090009891196835
+  eval_f1: 0.9090009891196835
+  eval_session_acc: 0.5694444444444444
+  eval_runtime: 115.1815
+  eval_samples_per_second: 8.777
+  eval_steps_per_second: 8.777
+  epoch: 2.0
+
+========================================
+Epoch 3
+Hyperparameters:
+  num_epochs: 12
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 2
+  lora_alpha: 32
+  lora_dropout: 0.0708947194320872
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.6811628341674805
+  eval_accuracy: 0.9228486646884273
+  eval_precision: 0.9228486646884273
+  eval_recall: 0.9228486646884273
+  eval_f1: 0.9228486646884273
+  eval_session_acc: 0.5972222222222222
+  eval_runtime: 116.293
+  eval_samples_per_second: 8.694
+  eval_steps_per_second: 8.694
+  epoch: 3.0
+
+========================================
+Epoch 4
+Hyperparameters:
+  num_epochs: 12
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 2
+  lora_alpha: 32
+  lora_dropout: 0.0708947194320872
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.7073346376419067
+  eval_accuracy: 0.9287833827893175
+  eval_precision: 0.9287833827893175
+  eval_recall: 0.9287833827893175
+  eval_f1: 0.9287833827893175
+  eval_session_acc: 0.6944444444444444
+  eval_runtime: 115.81
+  eval_samples_per_second: 8.73
+  eval_steps_per_second: 8.73
+  epoch: 4.0
+
+========================================
+Epoch 5
+Hyperparameters:
+  num_epochs: 12
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 2
+  lora_alpha: 32
+  lora_dropout: 0.0708947194320872
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.6977519989013672
+  eval_accuracy: 0.9277942631058358
+  eval_precision: 0.9277942631058358
+  eval_recall: 0.9277942631058358
+  eval_f1: 0.9277942631058358
+  eval_session_acc: 0.6527777777777778
+  eval_runtime: 115.5411
+  eval_samples_per_second: 8.75
+  eval_steps_per_second: 8.75
+  epoch: 5.0
+
+========================================
+Epoch 6
+Hyperparameters:
+  num_epochs: 12
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 2
+  lora_alpha: 32
+  lora_dropout: 0.0708947194320872
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.7210868000984192
+  eval_accuracy: 0.9297725024727992
+  eval_precision: 0.9297725024727992
+  eval_recall: 0.9297725024727992
+  eval_f1: 0.9297725024727992
+  eval_session_acc: 0.6666666666666666
+  eval_runtime: 115.4538
+  eval_samples_per_second: 8.757
+  eval_steps_per_second: 8.757
+  epoch: 6.0
+
+========================================
+Epoch 7
+Hyperparameters:
+  num_epochs: 12
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 2
+  lora_alpha: 32
+  lora_dropout: 0.0708947194320872
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.7123923897743225
+  eval_accuracy: 0.9317507418397626
+  eval_precision: 0.9317507418397626
+  eval_recall: 0.9317507418397626
+  eval_f1: 0.9317507418397626
+  eval_session_acc: 0.6805555555555556
+  eval_runtime: 115.3809
+  eval_samples_per_second: 8.762
+  eval_steps_per_second: 8.762
+  epoch: 7.0
+
+========================================
+Epoch 8
+Hyperparameters:
+  num_epochs: 12
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 2
+  lora_alpha: 32
+  lora_dropout: 0.0708947194320872
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.7140420079231262
+  eval_accuracy: 0.9297725024727992
+  eval_precision: 0.9297725024727992
+  eval_recall: 0.9297725024727992
+  eval_f1: 0.9297725024727992
+  eval_session_acc: 0.6805555555555556
+  eval_runtime: 115.1708
+  eval_samples_per_second: 8.778
+  eval_steps_per_second: 8.778
+  epoch: 8.0
+
+========================================
+Epoch 1
+Hyperparameters:
+  num_epochs: 8
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 32
+  lora_alpha: 32
+  lora_dropout: 0.02022312078445401
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.8300891518592834
+  eval_accuracy: 0.887240356083086
+  eval_precision: 0.887240356083086
+  eval_recall: 0.887240356083086
+  eval_f1: 0.887240356083086
+  eval_session_acc: 0.4305555555555556
+  eval_runtime: 114.8661
+  eval_samples_per_second: 8.802
+  eval_steps_per_second: 8.802
+  epoch: 1.0
+
+========================================
+Epoch 1
+Hyperparameters:
+  num_epochs: 6
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 16
+  lora_alpha: 8
+  lora_dropout: 0.06633901825034094
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 1.0591875314712524
+  eval_accuracy: 0.7942631058358062
+  eval_precision: 0.7942631058358062
+  eval_recall: 0.7942631058358062
+  eval_f1: 0.7942631058358062
+  eval_session_acc: 0.3472222222222222
+  eval_runtime: 115.5689
+  eval_samples_per_second: 8.748
+  eval_steps_per_second: 8.748
+  epoch: 1.0
+
+========================================
+Epoch 1
+Hyperparameters:
+  num_epochs: 7
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 2
+  lora_alpha: 64
+  lora_dropout: 0.036817429024454465
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.9056482315063477
+  eval_accuracy: 0.887240356083086
+  eval_precision: 0.887240356083086
+  eval_recall: 0.887240356083086
+  eval_f1: 0.887240356083086
+  eval_session_acc: 0.4583333333333333
+  eval_runtime: 114.6598
+  eval_samples_per_second: 8.817
+  eval_steps_per_second: 8.817
+  epoch: 1.0
+
+========================================
+Epoch 1
+Hyperparameters:
+  num_epochs: 5
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 2
+  lora_alpha: 4
+  lora_dropout: 0.07896525175283982
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.7719287276268005
+  eval_accuracy: 0.874381800197824
+  eval_precision: 0.874381800197824
+  eval_recall: 0.874381800197824
+  eval_f1: 0.874381800197824
+  eval_session_acc: 0.4583333333333333
+  eval_runtime: 115.3791
+  eval_samples_per_second: 8.762
+  eval_steps_per_second: 8.762
+  epoch: 1.0
+
+========================================
+Epoch 1
+Hyperparameters:
+  num_epochs: 12
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 2
+  lora_alpha: 32
+  lora_dropout: 0.0020301862810134103
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 1.3175551891326904
+  eval_accuracy: 0.8001978239366964
+  eval_precision: 0.8001978239366964
+  eval_recall: 0.8001978239366964
+  eval_f1: 0.8001978239366964
+  eval_session_acc: 0.4305555555555556
+  eval_runtime: 114.3891
+  eval_samples_per_second: 8.838
+  eval_steps_per_second: 8.838
+  epoch: 1.0
+
+========================================
+Epoch 1
+Hyperparameters:
+  num_epochs: 9
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 16
+  lora_alpha: 16
+  lora_dropout: 0.04111576067973138
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.7454987168312073
+  eval_accuracy: 0.8793273986152325
+  eval_precision: 0.8793273986152325
+  eval_recall: 0.8793273986152325
+  eval_f1: 0.8793273986152325
+  eval_session_acc: 0.4583333333333333
+  eval_runtime: 114.8381
+  eval_samples_per_second: 8.804
+  eval_steps_per_second: 8.804
+  epoch: 1.0
+
+========================================
+Epoch 1
+Hyperparameters:
+  num_epochs: 7
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 8
+  lora_alpha: 32
+  lora_dropout: 0.019994539133611756
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.7977588772773743
+  eval_accuracy: 0.8793273986152325
+  eval_precision: 0.8793273986152325
+  eval_recall: 0.8793273986152325
+  eval_f1: 0.8793273986152325
+  eval_session_acc: 0.4166666666666667
+  eval_runtime: 115.224
+  eval_samples_per_second: 8.774
+  eval_steps_per_second: 8.774
+  epoch: 1.0
+
+========================================
+Epoch 1
+Hyperparameters:
+  num_epochs: 9
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 4
+  lora_alpha: 16
+  lora_dropout: 0.052792294565131195
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.6689573526382446
+  eval_accuracy: 0.897131552917903
+  eval_precision: 0.897131552917903
+  eval_recall: 0.897131552917903
+  eval_f1: 0.897131552917903
+  eval_session_acc: 0.5138888888888888
+  eval_runtime: 115.2932
+  eval_samples_per_second: 8.769
+  eval_steps_per_second: 8.769
+  epoch: 1.0
+
+========================================
+Epoch 2
+Hyperparameters:
+  num_epochs: 9
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 4
+  lora_alpha: 16
+  lora_dropout: 0.052792294565131195
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.6946839094161987
+  eval_accuracy: 0.9159248269040554
+  eval_precision: 0.9159248269040554
+  eval_recall: 0.9159248269040554
+  eval_f1: 0.9159248269040554
+  eval_session_acc: 0.5833333333333334
+  eval_runtime: 115.2046
+  eval_samples_per_second: 8.776
+  eval_steps_per_second: 8.776
+  epoch: 2.0
+
+========================================
+Epoch 3
+Hyperparameters:
+  num_epochs: 9
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 4
+  lora_alpha: 16
+  lora_dropout: 0.052792294565131195
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.6427081823348999
+  eval_accuracy: 0.923837784371909
+  eval_precision: 0.923837784371909
+  eval_recall: 0.923837784371909
+  eval_f1: 0.923837784371909
+  eval_session_acc: 0.625
+  eval_runtime: 116.352
+  eval_samples_per_second: 8.689
+  eval_steps_per_second: 8.689
+  epoch: 3.0
+
+========================================
+Epoch 4
+Hyperparameters:
+  num_epochs: 9
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 4
+  lora_alpha: 16
+  lora_dropout: 0.052792294565131195
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.708354651927948
+  eval_accuracy: 0.9277942631058358
+  eval_precision: 0.9277942631058358
+  eval_recall: 0.9277942631058358
+  eval_f1: 0.9277942631058358
+  eval_session_acc: 0.6666666666666666
+  eval_runtime: 115.6955
+  eval_samples_per_second: 8.738
+  eval_steps_per_second: 8.738
+  epoch: 4.0
+
+========================================
+Epoch 5
+Hyperparameters:
+  num_epochs: 9
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 4
+  lora_alpha: 16
+  lora_dropout: 0.052792294565131195
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.6899824142456055
+  eval_accuracy: 0.9258160237388724
+  eval_precision: 0.9258160237388724
+  eval_recall: 0.9258160237388724
+  eval_f1: 0.9258160237388724
+  eval_session_acc: 0.6527777777777778
+  eval_runtime: 115.4897
+  eval_samples_per_second: 8.754
+  eval_steps_per_second: 8.754
+  epoch: 5.0
+
+========================================
+Epoch 6
+Hyperparameters:
+  num_epochs: 9
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 4
+  lora_alpha: 16
+  lora_dropout: 0.052792294565131195
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.6787940263748169
+  eval_accuracy: 0.9277942631058358
+  eval_precision: 0.9277942631058358
+  eval_recall: 0.9277942631058358
+  eval_f1: 0.9277942631058358
+  eval_session_acc: 0.6388888888888888
+  eval_runtime: 115.3684
+  eval_samples_per_second: 8.763
+  eval_steps_per_second: 8.763
+  epoch: 6.0
+
+========================================
+Epoch 1
+Hyperparameters:
+  num_epochs: 11
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 32
+  lora_alpha: 32
+  lora_dropout: 0.01217909284899311
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.6566076278686523
+  eval_accuracy: 0.9000989119683481
+  eval_precision: 0.9000989119683481
+  eval_recall: 0.9000989119683481
+  eval_f1: 0.9000989119683481
+  eval_session_acc: 0.5138888888888888
+  eval_runtime: 115.5521
+  eval_samples_per_second: 8.749
+  eval_steps_per_second: 8.749
+  epoch: 1.0
+
+========================================
+Epoch 2
+Hyperparameters:
+  num_epochs: 11
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 32
+  lora_alpha: 32
+  lora_dropout: 0.01217909284899311
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.636772096157074
+  eval_accuracy: 0.9169139465875371
+  eval_precision: 0.9169139465875371
+  eval_recall: 0.9169139465875371
+  eval_f1: 0.9169139465875371
+  eval_session_acc: 0.5833333333333334
+  eval_runtime: 115.6358
+  eval_samples_per_second: 8.743
+  eval_steps_per_second: 8.743
+  epoch: 2.0
+
+========================================
+Epoch 3
+Hyperparameters:
+  num_epochs: 11
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 32
+  lora_alpha: 32
+  lora_dropout: 0.01217909284899311
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.6452428698539734
+  eval_accuracy: 0.9188921859545005
+  eval_precision: 0.9188921859545005
+  eval_recall: 0.9188921859545005
+  eval_f1: 0.9188921859545005
+  eval_session_acc: 0.5972222222222222
+  eval_runtime: 115.2914
+  eval_samples_per_second: 8.769
+  eval_steps_per_second: 8.769
+  epoch: 3.0
+
+========================================
+Epoch 4
+Hyperparameters:
+  num_epochs: 11
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 32
+  lora_alpha: 32
+  lora_dropout: 0.01217909284899311
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.664344072341919
+  eval_accuracy: 0.9307616221562809
+  eval_precision: 0.9307616221562809
+  eval_recall: 0.9307616221562809
+  eval_f1: 0.9307616221562809
+  eval_session_acc: 0.7083333333333334
+  eval_runtime: 115.5911
+  eval_samples_per_second: 8.746
+  eval_steps_per_second: 8.746
+  epoch: 4.0
+
+========================================
+Epoch 5
+Hyperparameters:
+  num_epochs: 11
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 32
+  lora_alpha: 32
+  lora_dropout: 0.01217909284899311
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.6393694877624512
+  eval_accuracy: 0.9297725024727992
+  eval_precision: 0.9297725024727992
+  eval_recall: 0.9297725024727992
+  eval_f1: 0.9297725024727992
+  eval_session_acc: 0.6944444444444444
+  eval_runtime: 116.3436
+  eval_samples_per_second: 8.69
+  eval_steps_per_second: 8.69
+  epoch: 5.0
+
+========================================
+Epoch 6
+Hyperparameters:
+  num_epochs: 11
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 32
+  lora_alpha: 32
+  lora_dropout: 0.01217909284899311
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.6570531725883484
+  eval_accuracy: 0.9287833827893175
+  eval_precision: 0.9287833827893175
+  eval_recall: 0.9287833827893175
+  eval_f1: 0.9287833827893175
+  eval_session_acc: 0.6666666666666666
+  eval_runtime: 116.2159
+  eval_samples_per_second: 8.699
+  eval_steps_per_second: 8.699
+  epoch: 6.0
+
+========================================
+Epoch 7
+Hyperparameters:
+  num_epochs: 11
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 32
+  lora_alpha: 32
+  lora_dropout: 0.01217909284899311
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.6365972757339478
+  eval_accuracy: 0.9307616221562809
+  eval_precision: 0.9307616221562809
+  eval_recall: 0.9307616221562809
+  eval_f1: 0.9307616221562809
+  eval_session_acc: 0.6944444444444444
+  eval_runtime: 115.5224
+  eval_samples_per_second: 8.752
+  eval_steps_per_second: 8.752
+  epoch: 7.0
+
+========================================
+Epoch 1
+Hyperparameters:
+  num_epochs: 11
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 32
+  lora_alpha: 32
+  lora_dropout: 0.015920110206059535
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.7026453018188477
+  eval_accuracy: 0.8961424332344213
+  eval_precision: 0.8961424332344213
+  eval_recall: 0.8961424332344213
+  eval_f1: 0.8961424332344213
+  eval_session_acc: 0.5138888888888888
+  eval_runtime: 115.4209
+  eval_samples_per_second: 8.759
+  eval_steps_per_second: 8.759
+  epoch: 1.0
+
+========================================
+Epoch 2
+Hyperparameters:
+  num_epochs: 11
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 32
+  lora_alpha: 32
+  lora_dropout: 0.015920110206059535
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.6387534141540527
+  eval_accuracy: 0.9070227497527201
+  eval_precision: 0.9070227497527201
+  eval_recall: 0.9070227497527201
+  eval_f1: 0.9070227497527201
+  eval_session_acc: 0.5555555555555556
+  eval_runtime: 115.2068
+  eval_samples_per_second: 8.776
+  eval_steps_per_second: 8.776
+  epoch: 2.0
+
+========================================
+Epoch 3
+Hyperparameters:
+  num_epochs: 11
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 32
+  lora_alpha: 32
+  lora_dropout: 0.015920110206059535
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.6239854693412781
+  eval_accuracy: 0.9218595450049456
+  eval_precision: 0.9218595450049456
+  eval_recall: 0.9218595450049456
+  eval_f1: 0.9218595450049456
+  eval_session_acc: 0.6388888888888888
+  eval_runtime: 115.1739
+  eval_samples_per_second: 8.778
+  eval_steps_per_second: 8.778
+  epoch: 3.0
+
+========================================
+Epoch 4
+Hyperparameters:
+  num_epochs: 11
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 32
+  lora_alpha: 32
+  lora_dropout: 0.015920110206059535
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.6331334114074707
+  eval_accuracy: 0.9258160237388724
+  eval_precision: 0.9258160237388724
+  eval_recall: 0.9258160237388724
+  eval_f1: 0.9258160237388724
+  eval_session_acc: 0.6666666666666666
+  eval_runtime: 115.0802
+  eval_samples_per_second: 8.785
+  eval_steps_per_second: 8.785
+  epoch: 4.0
+
+========================================
+Epoch 5
+Hyperparameters:
+  num_epochs: 11
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 32
+  lora_alpha: 32
+  lora_dropout: 0.015920110206059535
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.5959497094154358
+  eval_accuracy: 0.9268051434223541
+  eval_precision: 0.9268051434223541
+  eval_recall: 0.9268051434223541
+  eval_f1: 0.9268051434223541
+  eval_session_acc: 0.6805555555555556
+  eval_runtime: 115.7721
+  eval_samples_per_second: 8.733
+  eval_steps_per_second: 8.733
+  epoch: 5.0
+
+========================================
+Epoch 1
+Hyperparameters:
+  num_epochs: 11
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 32
+  lora_alpha: 32
+  lora_dropout: 0.029436554563763682
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.6975923180580139
+  eval_accuracy: 0.897131552917903
+  eval_precision: 0.897131552917903
+  eval_recall: 0.897131552917903
+  eval_f1: 0.897131552917903
+  eval_session_acc: 0.5138888888888888
+  eval_runtime: 116.0368
+  eval_samples_per_second: 8.713
+  eval_steps_per_second: 8.713
+  epoch: 1.0
+
+========================================
+Epoch 2
+Hyperparameters:
+  num_epochs: 11
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 32
+  lora_alpha: 32
+  lora_dropout: 0.029436554563763682
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.7200005054473877
+  eval_accuracy: 0.9080118694362018
+  eval_precision: 0.9080118694362018
+  eval_recall: 0.9080118694362018
+  eval_f1: 0.9080118694362018
+  eval_session_acc: 0.5416666666666666
+  eval_runtime: 115.7086
+  eval_samples_per_second: 8.737
+  eval_steps_per_second: 8.737
+  epoch: 2.0
+
+========================================
+Epoch 3
+Hyperparameters:
+  num_epochs: 11
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 32
+  lora_alpha: 32
+  lora_dropout: 0.029436554563763682
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.6759275794029236
+  eval_accuracy: 0.913946587537092
+  eval_precision: 0.913946587537092
+  eval_recall: 0.913946587537092
+  eval_f1: 0.913946587537092
+  eval_session_acc: 0.5833333333333334
+  eval_runtime: 115.3637
+  eval_samples_per_second: 8.764
+  eval_steps_per_second: 8.764
+  epoch: 3.0
+
+========================================
+Epoch 4
+Hyperparameters:
+  num_epochs: 11
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 32
+  lora_alpha: 32
+  lora_dropout: 0.029436554563763682
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.7031498551368713
+  eval_accuracy: 0.9268051434223541
+  eval_precision: 0.9268051434223541
+  eval_recall: 0.9268051434223541
+  eval_f1: 0.9268051434223541
+  eval_session_acc: 0.6527777777777778
+  eval_runtime: 116.3493
+  eval_samples_per_second: 8.689
+  eval_steps_per_second: 8.689
+  epoch: 4.0
+
+========================================
+Epoch 5
+Hyperparameters:
+  num_epochs: 11
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 32
+  lora_alpha: 32
+  lora_dropout: 0.029436554563763682
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.6901444792747498
+  eval_accuracy: 0.9258160237388724
+  eval_precision: 0.9258160237388724
+  eval_recall: 0.9258160237388724
+  eval_f1: 0.9258160237388724
+  eval_session_acc: 0.6388888888888888
+  eval_runtime: 116.296
+  eval_samples_per_second: 8.693
+  eval_steps_per_second: 8.693
+  epoch: 5.0
+
+========================================
+Epoch 1
+Hyperparameters:
+  num_epochs: 12
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 32
+  lora_alpha: 32
+  lora_dropout: 0.007979638733989103
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.6584288477897644
+  eval_accuracy: 0.9010880316518298
+  eval_precision: 0.9010880316518298
+  eval_recall: 0.9010880316518298
+  eval_f1: 0.9010880316518298
+  eval_session_acc: 0.5138888888888888
+  eval_runtime: 115.88
+  eval_samples_per_second: 8.725
+  eval_steps_per_second: 8.725
+  epoch: 1.0
+
+========================================
+Epoch 2
+Hyperparameters:
+  num_epochs: 12
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 32
+  lora_alpha: 32
+  lora_dropout: 0.007979638733989103
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.6193684935569763
+  eval_accuracy: 0.9070227497527201
+  eval_precision: 0.9070227497527201
+  eval_recall: 0.9070227497527201
+  eval_f1: 0.9070227497527201
+  eval_session_acc: 0.5416666666666666
+  eval_runtime: 115.952
+  eval_samples_per_second: 8.719
+  eval_steps_per_second: 8.719
+  epoch: 2.0
+
+========================================
+Epoch 3
+Hyperparameters:
+  num_epochs: 12
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 32
+  lora_alpha: 32
+  lora_dropout: 0.007979638733989103
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.6149864196777344
+  eval_accuracy: 0.9248269040553907
+  eval_precision: 0.9248269040553907
+  eval_recall: 0.9248269040553907
+  eval_f1: 0.9248269040553907
+  eval_session_acc: 0.625
+  eval_runtime: 116.7084
+  eval_samples_per_second: 8.663
+  eval_steps_per_second: 8.663
+  epoch: 3.0
+
+========================================
+Epoch 4
+Hyperparameters:
+  num_epochs: 12
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 32
+  lora_alpha: 32
+  lora_dropout: 0.007979638733989103
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.646340548992157
+  eval_accuracy: 0.9208704253214639
+  eval_precision: 0.9208704253214639
+  eval_recall: 0.9208704253214639
+  eval_f1: 0.9208704253214639
+  eval_session_acc: 0.6527777777777778
+  eval_runtime: 115.7424
+  eval_samples_per_second: 8.735
+  eval_steps_per_second: 8.735
+  epoch: 4.0
+
+========================================
+Epoch 5
+Hyperparameters:
+  num_epochs: 12
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 32
+  lora_alpha: 32
+  lora_dropout: 0.007979638733989103
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.5995159149169922
+  eval_accuracy: 0.9297725024727992
+  eval_precision: 0.9297725024727992
+  eval_recall: 0.9297725024727992
+  eval_f1: 0.9297725024727992
+  eval_session_acc: 0.6944444444444444
+  eval_runtime: 115.8309
+  eval_samples_per_second: 8.728
+  eval_steps_per_second: 8.728
+  epoch: 5.0
+
+========================================
+Epoch 6
+Hyperparameters:
+  num_epochs: 12
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 32
+  lora_alpha: 32
+  lora_dropout: 0.007979638733989103
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.6116395592689514
+  eval_accuracy: 0.9307616221562809
+  eval_precision: 0.9307616221562809
+  eval_recall: 0.9307616221562809
+  eval_f1: 0.9307616221562809
+  eval_session_acc: 0.6944444444444444
+  eval_runtime: 116.476
+  eval_samples_per_second: 8.68
+  eval_steps_per_second: 8.68
+  epoch: 6.0
+
+========================================
+Epoch 7
+Hyperparameters:
+  num_epochs: 12
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 32
+  lora_alpha: 32
+  lora_dropout: 0.007979638733989103
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.6014039516448975
+  eval_accuracy: 0.9327398615232443
+  eval_precision: 0.9327398615232443
+  eval_recall: 0.9327398615232443
+  eval_f1: 0.9327398615232443
+  eval_session_acc: 0.7083333333333334
+  eval_runtime: 115.7422
+  eval_samples_per_second: 8.735
+  eval_steps_per_second: 8.735
+  epoch: 7.0
+
+========================================
+Epoch 8
+Hyperparameters:
+  num_epochs: 12
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 32
+  lora_alpha: 32
+  lora_dropout: 0.007979638733989103
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.6021549701690674
+  eval_accuracy: 0.9317507418397626
+  eval_precision: 0.9317507418397626
+  eval_recall: 0.9317507418397626
+  eval_f1: 0.9317507418397626
+  eval_session_acc: 0.7083333333333334
+  eval_runtime: 116.0345
+  eval_samples_per_second: 8.713
+  eval_steps_per_second: 8.713
+  epoch: 8.0
+
+========================================
+Epoch 1
+Hyperparameters:
+  num_epochs: 12
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 32
+  lora_alpha: 4
+  lora_dropout: 0.007577497387604574
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 1.1234837770462036
+  eval_accuracy: 0.7388724035608308
+  eval_precision: 0.7388724035608308
+  eval_recall: 0.7388724035608308
+  eval_f1: 0.7388724035608308
+  eval_session_acc: 0.2361111111111111
+  eval_runtime: 115.9979
+  eval_samples_per_second: 8.716
+  eval_steps_per_second: 8.716
+  epoch: 1.0
+
+========================================
+Epoch 1
+Hyperparameters:
+  num_epochs: 10
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 2
+  lora_alpha: 8
+  lora_dropout: 0.030374694538376792
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.9355679154396057
+  eval_accuracy: 0.8259149357072205
+  eval_precision: 0.8259149357072205
+  eval_recall: 0.8259149357072205
+  eval_f1: 0.8259149357072205
+  eval_session_acc: 0.3472222222222222
+  eval_runtime: 116.1847
+  eval_samples_per_second: 8.702
+  eval_steps_per_second: 8.702
+  epoch: 1.0
+
+========================================
+Epoch 1
+Hyperparameters:
+  num_epochs: 5
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 2
+  lora_alpha: 64
+  lora_dropout: 0.02415663401643647
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.7391411066055298
+  eval_accuracy: 0.8991097922848664
+  eval_precision: 0.8991097922848664
+  eval_recall: 0.8991097922848664
+  eval_f1: 0.8991097922848664
+  eval_session_acc: 0.5277777777777778
+  eval_runtime: 114.8551
+  eval_samples_per_second: 8.802
+  eval_steps_per_second: 8.802
+  epoch: 1.0
+
+========================================
+Epoch 2
+Hyperparameters:
+  num_epochs: 5
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 2
+  lora_alpha: 64
+  lora_dropout: 0.02415663401643647
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.762647271156311
+  eval_accuracy: 0.9090009891196835
+  eval_precision: 0.9090009891196835
+  eval_recall: 0.9090009891196835
+  eval_f1: 0.9090009891196835
+  eval_session_acc: 0.5694444444444444
+  eval_runtime: 115.4061
+  eval_samples_per_second: 8.76
+  eval_steps_per_second: 8.76
+  epoch: 2.0
+
+========================================
+Epoch 3
+Hyperparameters:
+  num_epochs: 5
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 2
+  lora_alpha: 64
+  lora_dropout: 0.02415663401643647
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.7031541466712952
+  eval_accuracy: 0.9169139465875371
+  eval_precision: 0.9169139465875371
+  eval_recall: 0.9169139465875371
+  eval_f1: 0.9169139465875371
+  eval_session_acc: 0.6388888888888888
+  eval_runtime: 114.4635
+  eval_samples_per_second: 8.833
+  eval_steps_per_second: 8.833
+  epoch: 3.0
+
+========================================
+Epoch 4
+Hyperparameters:
+  num_epochs: 5
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 2
+  lora_alpha: 64
+  lora_dropout: 0.02415663401643647
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.7822034955024719
+  eval_accuracy: 0.9277942631058358
+  eval_precision: 0.9277942631058358
+  eval_recall: 0.9277942631058358
+  eval_f1: 0.9277942631058358
+  eval_session_acc: 0.6805555555555556
+  eval_runtime: 114.5021
+  eval_samples_per_second: 8.83
+  eval_steps_per_second: 8.83
+  epoch: 4.0
+
+========================================
+Epoch 5
+Hyperparameters:
+  num_epochs: 5
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 2
+  lora_alpha: 64
+  lora_dropout: 0.02415663401643647
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.7343739867210388
+  eval_accuracy: 0.9258160237388724
+  eval_precision: 0.9258160237388724
+  eval_recall: 0.9258160237388724
+  eval_f1: 0.9258160237388724
+  eval_session_acc: 0.6666666666666666
+  eval_runtime: 114.1804
+  eval_samples_per_second: 8.854
+  eval_steps_per_second: 8.854
+  epoch: 5.0
+
+========================================
+Epoch 6
+Hyperparameters:
+  num_epochs: 5
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 2
+  lora_alpha: 64
+  lora_dropout: 0.02415663401643647
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.7579187750816345
+  eval_accuracy: 0.9317507418397626
+  eval_precision: 0.9317507418397626
+  eval_recall: 0.9317507418397626
+  eval_f1: 0.9317507418397626
+  eval_session_acc: 0.6805555555555556
+  eval_runtime: 114.3828
+  eval_samples_per_second: 8.839
+  eval_steps_per_second: 8.839
+  epoch: 6.0
+
+========================================
+Epoch 7
+Hyperparameters:
+  num_epochs: 5
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 2
+  lora_alpha: 64
+  lora_dropout: 0.02415663401643647
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.7491584420204163
+  eval_accuracy: 0.9327398615232443
+  eval_precision: 0.9327398615232443
+  eval_recall: 0.9327398615232443
+  eval_f1: 0.9327398615232443
+  eval_session_acc: 0.6944444444444444
+  eval_runtime: 114.3659
+  eval_samples_per_second: 8.84
+  eval_steps_per_second: 8.84
+  epoch: 7.0
+
+========================================
+Epoch 8
+Hyperparameters:
+  num_epochs: 5
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 2
+  lora_alpha: 64
+  lora_dropout: 0.02415663401643647
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.7489969730377197
+  eval_accuracy: 0.9307616221562809
+  eval_precision: 0.9307616221562809
+  eval_recall: 0.9307616221562809
+  eval_f1: 0.9307616221562809
+  eval_session_acc: 0.6805555555555556
+  eval_runtime: 114.985
+  eval_samples_per_second: 8.792
+  eval_steps_per_second: 8.792
+  epoch: 8.0
+
+========================================
+Epoch 1
+Hyperparameters:
+  num_epochs: 9
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 32
+  lora_alpha: 16
+  lora_dropout: 0.08487831324512767
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.8551293611526489
+  eval_accuracy: 0.8892185954500494
+  eval_precision: 0.8892185954500494
+  eval_recall: 0.8892185954500494
+  eval_f1: 0.8892185954500494
+  eval_session_acc: 0.4444444444444444
+  eval_runtime: 115.4004
+  eval_samples_per_second: 8.761
+  eval_steps_per_second: 8.761
+  epoch: 1.0
+
+========================================
+Epoch 1
+Hyperparameters:
+  num_epochs: 12
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 2
+  lora_alpha: 16
+  lora_dropout: 0.07116292134325146
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.6841827034950256
+  eval_accuracy: 0.8981206726013847
+  eval_precision: 0.8981206726013847
+  eval_recall: 0.8981206726013847
+  eval_f1: 0.8981206726013847
+  eval_session_acc: 0.4861111111111111
+  eval_runtime: 114.4594
+  eval_samples_per_second: 8.833
+  eval_steps_per_second: 8.833
+  epoch: 1.0
+
+========================================
+Epoch 2
+Hyperparameters:
+  num_epochs: 12
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 2
+  lora_alpha: 16
+  lora_dropout: 0.07116292134325146
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.7925229668617249
+  eval_accuracy: 0.9060336300692384
+  eval_precision: 0.9060336300692384
+  eval_recall: 0.9060336300692384
+  eval_f1: 0.9060336300692384
+  eval_session_acc: 0.5277777777777778
+  eval_runtime: 114.2199
+  eval_samples_per_second: 8.851
+  eval_steps_per_second: 8.851
+  epoch: 2.0
+
+========================================
+Epoch 1
+Hyperparameters:
+  num_epochs: 10
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 16
+  lora_alpha: 32
+  lora_dropout: 0.0060410430732018225
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.6733113527297974
+  eval_accuracy: 0.8931750741839762
+  eval_precision: 0.8931750741839762
+  eval_recall: 0.8931750741839762
+  eval_f1: 0.8931750741839762
+  eval_session_acc: 0.5
+  eval_runtime: 115.0537
+  eval_samples_per_second: 8.787
+  eval_steps_per_second: 8.787
+  epoch: 1.0
+
+========================================
+Epoch 1
+Hyperparameters:
+  num_epochs: 11
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 32
+  lora_alpha: 32
+  lora_dropout: 0.012300163712355523
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.6960747838020325
+  eval_accuracy: 0.9030662710187932
+  eval_precision: 0.9030662710187932
+  eval_recall: 0.9030662710187932
+  eval_f1: 0.9030662710187932
+  eval_session_acc: 0.5
+  eval_runtime: 114.6512
+  eval_samples_per_second: 8.818
+  eval_steps_per_second: 8.818
+  epoch: 1.0
+
+========================================
+Epoch 2
+Hyperparameters:
+  num_epochs: 11
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 32
+  lora_alpha: 32
+  lora_dropout: 0.012300163712355523
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.676362156867981
+  eval_accuracy: 0.9050445103857567
+  eval_precision: 0.9050445103857567
+  eval_recall: 0.9050445103857567
+  eval_f1: 0.9050445103857567
+  eval_session_acc: 0.5
+  eval_runtime: 115.1133
+  eval_samples_per_second: 8.783
+  eval_steps_per_second: 8.783
+  epoch: 2.0
+
+========================================
+Epoch 1
+Hyperparameters:
+  num_epochs: 12
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 32
+  lora_alpha: 32
+  lora_dropout: 0.009371424850064355
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 1.2795130014419556
+  eval_accuracy: 0.7903066271018794
+  eval_precision: 0.7903066271018794
+  eval_recall: 0.7903066271018794
+  eval_f1: 0.7903066271018794
+  eval_session_acc: 0.4166666666666667
+  eval_runtime: 118.8453
+  eval_samples_per_second: 8.507
+  eval_steps_per_second: 8.507
+  epoch: 1.0
+
+========================================
+Epoch 1
+Hyperparameters:
+  num_epochs: 11
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 32
+  lora_alpha: 32
+  lora_dropout: 0.09811504217236691
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.7375468015670776
+  eval_accuracy: 0.8803165182987142
+  eval_precision: 0.8803165182987142
+  eval_recall: 0.8803165182987142
+  eval_f1: 0.8803165182987142
+  eval_session_acc: 0.4583333333333333
+  eval_runtime: 119.0002
+  eval_samples_per_second: 8.496
+  eval_steps_per_second: 8.496
+  epoch: 1.0
+
+========================================
+Epoch 1
+Hyperparameters:
+  num_epochs: 10
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 2
+  lora_alpha: 16
+  lora_dropout: 0.019304885035601255
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.7550225257873535
+  eval_accuracy: 0.8951533135509396
+  eval_precision: 0.8951533135509396
+  eval_recall: 0.8951533135509396
+  eval_f1: 0.8951533135509396
+  eval_session_acc: 0.5
+  eval_runtime: 118.9256
+  eval_samples_per_second: 8.501
+  eval_steps_per_second: 8.501
+  epoch: 1.0
+
+========================================
+Epoch 1
+Hyperparameters:
+  num_epochs: 12
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 4
+  lora_alpha: 32
+  lora_dropout: 0.0463078276725329
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.7013329267501831
+  eval_accuracy: 0.8941641938674579
+  eval_precision: 0.8941641938674579
+  eval_recall: 0.8941641938674579
+  eval_f1: 0.8941641938674579
+  eval_session_acc: 0.5277777777777778
+  eval_runtime: 115.3037
+  eval_samples_per_second: 8.768
+  eval_steps_per_second: 8.768
+  epoch: 1.0
+
+========================================
+Epoch 1
+Hyperparameters:
+  num_epochs: 8
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 8
+  lora_alpha: 2
+  lora_dropout: 0.06102318262015492
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.6906050443649292
+  eval_accuracy: 0.8931750741839762
+  eval_precision: 0.8931750741839762
+  eval_recall: 0.8931750741839762
+  eval_f1: 0.8931750741839762
+  eval_session_acc: 0.5
+  eval_runtime: 115.5721
+  eval_samples_per_second: 8.748
+  eval_steps_per_second: 8.748
+  epoch: 1.0
+
+========================================
+Epoch 1
+Hyperparameters:
+  num_epochs: 11
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 32
+  lora_alpha: 16
+  lora_dropout: 0.015171356225790316
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.7624270915985107
+  eval_accuracy: 0.8714144411473789
+  eval_precision: 0.8714144411473789
+  eval_recall: 0.8714144411473789
+  eval_f1: 0.8714144411473789
+  eval_session_acc: 0.4027777777777778
+  eval_runtime: 115.689
+  eval_samples_per_second: 8.739
+  eval_steps_per_second: 8.739
+  epoch: 1.0
+
+========================================
+Epoch 1
+Hyperparameters:
+  num_epochs: 4
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 2
+  lora_alpha: 32
+  lora_dropout: 0.03604341745262587
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.7328879237174988
+  eval_accuracy: 0.8882294757665677
+  eval_precision: 0.8882294757665677
+  eval_recall: 0.8882294757665677
+  eval_f1: 0.8882294757665677
+  eval_session_acc: 0.5277777777777778
+  eval_runtime: 114.4113
+  eval_samples_per_second: 8.837
+  eval_steps_per_second: 8.837
+  epoch: 1.0
+
+========================================
+Epoch 1
+Hyperparameters:
+  num_epochs: 5
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 4
+  lora_alpha: 4
+  lora_dropout: 0.004266587642769609
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.9524253010749817
+  eval_accuracy: 0.8249258160237388
+  eval_precision: 0.8249258160237388
+  eval_recall: 0.8249258160237388
+  eval_f1: 0.8249258160237388
+  eval_session_acc: 0.3472222222222222
+  eval_runtime: 114.9782
+  eval_samples_per_second: 8.793
+  eval_steps_per_second: 8.793
+  epoch: 1.0
+
+========================================
+Epoch 1
+Hyperparameters:
+  num_epochs: 3
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 8
+  lora_alpha: 64
+  lora_dropout: 0.026869035583837592
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 2.4311044216156006
+  eval_accuracy: 0.6844708209693373
+  eval_precision: 0.6844708209693373
+  eval_recall: 0.6844708209693373
+  eval_f1: 0.6844708209693373
+  eval_session_acc: 0.2916666666666667
+  eval_runtime: 114.9374
+  eval_samples_per_second: 8.796
+  eval_steps_per_second: 8.796
+  epoch: 1.0
+
+========================================
+Epoch 1
+Hyperparameters:
+  num_epochs: 11
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 32
+  lora_alpha: 32
+  lora_dropout: 0.013887149538220421
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.6693429350852966
+  eval_accuracy: 0.8991097922848664
+  eval_precision: 0.8991097922848664
+  eval_recall: 0.8991097922848664
+  eval_f1: 0.8991097922848664
+  eval_session_acc: 0.5
+  eval_runtime: 116.4802
+  eval_samples_per_second: 8.68
+  eval_steps_per_second: 8.68
+  epoch: 1.0
+
+========================================
+Epoch 2
+Hyperparameters:
+  num_epochs: 11
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 32
+  lora_alpha: 32
+  lora_dropout: 0.013887149538220421
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.6935267448425293
+  eval_accuracy: 0.9099901088031652
+  eval_precision: 0.9099901088031652
+  eval_recall: 0.9099901088031652
+  eval_f1: 0.9099901088031652
+  eval_session_acc: 0.5416666666666666
+  eval_runtime: 115.6056
+  eval_samples_per_second: 8.745
+  eval_steps_per_second: 8.745
+  epoch: 2.0
+
+========================================
+Epoch 3
+Hyperparameters:
+  num_epochs: 11
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 32
+  lora_alpha: 32
+  lora_dropout: 0.013887149538220421
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.641437828540802
+  eval_accuracy: 0.9159248269040554
+  eval_precision: 0.9159248269040554
+  eval_recall: 0.9159248269040554
+  eval_f1: 0.9159248269040554
+  eval_session_acc: 0.5833333333333334
+  eval_runtime: 116.6205
+  eval_samples_per_second: 8.669
+  eval_steps_per_second: 8.669
+  epoch: 3.0
+
+========================================
+Epoch 4
+Hyperparameters:
+  num_epochs: 11
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 32
+  lora_alpha: 32
+  lora_dropout: 0.013887149538220421
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.6323168873786926
+  eval_accuracy: 0.9258160237388724
+  eval_precision: 0.9258160237388724
+  eval_recall: 0.9258160237388724
+  eval_f1: 0.9258160237388724
+  eval_session_acc: 0.6805555555555556
+  eval_runtime: 116.4796
+  eval_samples_per_second: 8.68
+  eval_steps_per_second: 8.68
+  epoch: 4.0
+
+========================================
+Epoch 5
+Hyperparameters:
+  num_epochs: 11
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 32
+  lora_alpha: 32
+  lora_dropout: 0.013887149538220421
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.6255357265472412
+  eval_accuracy: 0.9248269040553907
+  eval_precision: 0.9248269040553907
+  eval_recall: 0.9248269040553907
+  eval_f1: 0.9248269040553907
+  eval_session_acc: 0.6805555555555556
+  eval_runtime: 115.9683
+  eval_samples_per_second: 8.718
+  eval_steps_per_second: 8.718
+  epoch: 5.0
+
+========================================
+Epoch 1
+Hyperparameters:
+  num_epochs: 10
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 32
+  lora_alpha: 32
+  lora_dropout: 0.00867770203281886
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.6709182262420654
+  eval_accuracy: 0.8981206726013847
+  eval_precision: 0.8981206726013847
+  eval_recall: 0.8981206726013847
+  eval_f1: 0.8981206726013847
+  eval_session_acc: 0.5
+  eval_runtime: 115.7507
+  eval_samples_per_second: 8.734
+  eval_steps_per_second: 8.734
+  epoch: 1.0
+
+========================================
+Epoch 2
+Hyperparameters:
+  num_epochs: 10
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 32
+  lora_alpha: 32
+  lora_dropout: 0.00867770203281886
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.6756577491760254
+  eval_accuracy: 0.913946587537092
+  eval_precision: 0.913946587537092
+  eval_recall: 0.913946587537092
+  eval_f1: 0.913946587537092
+  eval_session_acc: 0.625
+  eval_runtime: 115.8202
+  eval_samples_per_second: 8.729
+  eval_steps_per_second: 8.729
+  epoch: 2.0
+
+========================================
+Epoch 3
+Hyperparameters:
+  num_epochs: 10
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 32
+  lora_alpha: 32
+  lora_dropout: 0.00867770203281886
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.6493642926216125
+  eval_accuracy: 0.913946587537092
+  eval_precision: 0.913946587537092
+  eval_recall: 0.913946587537092
+  eval_f1: 0.913946587537092
+  eval_session_acc: 0.6111111111111112
+  eval_runtime: 115.0709
+  eval_samples_per_second: 8.786
+  eval_steps_per_second: 8.786
+  epoch: 3.0
+
+========================================
+Epoch 1
+Hyperparameters:
+  num_epochs: 12
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 32
+  lora_alpha: 2
+  lora_dropout: 0.022687976113925867
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.7181432843208313
+  eval_accuracy: 0.8832838773491593
+  eval_precision: 0.8832838773491593
+  eval_recall: 0.8832838773491593
+  eval_f1: 0.8832838773491593
+  eval_session_acc: 0.4722222222222222
+  eval_runtime: 115.0493
+  eval_samples_per_second: 8.788
+  eval_steps_per_second: 8.788
+  epoch: 1.0
+
+========================================
+Epoch 1
+Hyperparameters:
+  num_epochs: 11
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 32
+  lora_alpha: 32
+  lora_dropout: 0.011507511614955446
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.682505190372467
+  eval_accuracy: 0.8951533135509396
+  eval_precision: 0.8951533135509396
+  eval_recall: 0.8951533135509396
+  eval_f1: 0.8951533135509396
+  eval_session_acc: 0.5
+  eval_runtime: 115.9534
+  eval_samples_per_second: 8.719
+  eval_steps_per_second: 8.719
+  epoch: 1.0
+
+========================================
+Epoch 1
+Hyperparameters:
+  num_epochs: 12
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 2
+  lora_alpha: 8
+  lora_dropout: 0.0028369470832469695
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 1.0130938291549683
+  eval_accuracy: 0.8150346191889218
+  eval_precision: 0.8150346191889218
+  eval_recall: 0.8150346191889218
+  eval_f1: 0.8150346191889218
+  eval_session_acc: 0.3472222222222222
+  eval_runtime: 114.7687
+  eval_samples_per_second: 8.809
+  eval_steps_per_second: 8.809
+  epoch: 1.0
+
+========================================
+Epoch 1
+Hyperparameters:
+  num_epochs: 10
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 32
+  lora_alpha: 32
+  lora_dropout: 0.015963678555866438
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.6680222153663635
+  eval_accuracy: 0.9020771513353115
+  eval_precision: 0.9020771513353115
+  eval_recall: 0.9020771513353115
+  eval_f1: 0.9020771513353115
+  eval_session_acc: 0.5416666666666666
+  eval_runtime: 115.6035
+  eval_samples_per_second: 8.745
+  eval_steps_per_second: 8.745
+  epoch: 1.0
+
+========================================
+Epoch 2
+Hyperparameters:
+  num_epochs: 10
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 32
+  lora_alpha: 32
+  lora_dropout: 0.015963678555866438
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.6334127187728882
+  eval_accuracy: 0.9109792284866469
+  eval_precision: 0.9109792284866469
+  eval_recall: 0.9109792284866469
+  eval_f1: 0.9109792284866469
+  eval_session_acc: 0.5416666666666666
+  eval_runtime: 115.4138
+  eval_samples_per_second: 8.76
+  eval_steps_per_second: 8.76
+  epoch: 2.0
+
+========================================
+Epoch 3
+Hyperparameters:
+  num_epochs: 10
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 32
+  lora_alpha: 32
+  lora_dropout: 0.015963678555866438
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.6266961693763733
+  eval_accuracy: 0.9179030662710188
+  eval_precision: 0.9179030662710188
+  eval_recall: 0.9179030662710188
+  eval_f1: 0.9179030662710188
+  eval_session_acc: 0.5833333333333334
+  eval_runtime: 115.2202
+  eval_samples_per_second: 8.775
+  eval_steps_per_second: 8.775
+  epoch: 3.0
+
+========================================
+Epoch 4
+Hyperparameters:
+  num_epochs: 10
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 32
+  lora_alpha: 32
+  lora_dropout: 0.015963678555866438
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.6391031742095947
+  eval_accuracy: 0.9248269040553907
+  eval_precision: 0.9248269040553907
+  eval_recall: 0.9248269040553907
+  eval_f1: 0.9248269040553907
+  eval_session_acc: 0.6527777777777778
+  eval_runtime: 116.688
+  eval_samples_per_second: 8.664
+  eval_steps_per_second: 8.664
+  epoch: 4.0
+
+========================================
+Epoch 5
+Hyperparameters:
+  num_epochs: 10
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 32
+  lora_alpha: 32
+  lora_dropout: 0.015963678555866438
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.6320631504058838
+  eval_accuracy: 0.9218595450049456
+  eval_precision: 0.9218595450049456
+  eval_recall: 0.9218595450049456
+  eval_f1: 0.9218595450049456
+  eval_session_acc: 0.6527777777777778
+  eval_runtime: 116.2224
+  eval_samples_per_second: 8.699
+  eval_steps_per_second: 8.699
+  epoch: 5.0
+
+========================================
+Epoch 1
+Hyperparameters:
+  num_epochs: 7
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 2
+  lora_alpha: 32
+  lora_dropout: 0.03257410220277645
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.6903192400932312
+  eval_accuracy: 0.8941641938674579
+  eval_precision: 0.8941641938674579
+  eval_recall: 0.8941641938674579
+  eval_f1: 0.8941641938674579
+  eval_session_acc: 0.4722222222222222
+  eval_runtime: 115.2212
+  eval_samples_per_second: 8.774
+  eval_steps_per_second: 8.774
+  epoch: 1.0
+
+========================================
+Epoch 1
+Hyperparameters:
+  num_epochs: 9
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 16
+  lora_alpha: 32
+  lora_dropout: 0.08079230905597447
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.668624997138977
+  eval_accuracy: 0.8931750741839762
+  eval_precision: 0.8931750741839762
+  eval_recall: 0.8931750741839762
+  eval_f1: 0.8931750741839762
+  eval_session_acc: 0.5
+  eval_runtime: 115.7661
+  eval_samples_per_second: 8.733
+  eval_steps_per_second: 8.733
+  epoch: 1.0
+
+========================================
+Epoch 1
+Hyperparameters:
+  num_epochs: 6
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 32
+  lora_alpha: 16
+  lora_dropout: 0.044743601491358684
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.7410106062889099
+  eval_accuracy: 0.8931750741839762
+  eval_precision: 0.8931750741839762
+  eval_recall: 0.8931750741839762
+  eval_f1: 0.8931750741839762
+  eval_session_acc: 0.4861111111111111
+  eval_runtime: 115.1502
+  eval_samples_per_second: 8.78
+  eval_steps_per_second: 8.78
+  epoch: 1.0
+

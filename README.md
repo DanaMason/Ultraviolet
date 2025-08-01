@@ -40,3 +40,11 @@ This is a brief summary of the contents in this project. To run the program, use
 
 Additionally, a HuggingFace account is required, with access to the Llama 3 - 8B model.
 For recording purposes, a WandB account is also required (if desired to record these graphs).
+
+
+
+Also, if the venv is not included, please create one and download the requirements.txt file.
+If the hf_cache is not included, you will need to download the model.
+If the wandb file is not included, you will possibly need to set that up.
+
+These may not be included due to size of the files.

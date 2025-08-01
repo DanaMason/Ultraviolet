@@ -1,0 +1,17 @@
+torch
+torchvision
+torchaudio
+transformers
+datasets
+peft
+accelerate
+wandb
+tensorboard
+scikit-optimize
+scikit-learn
+pandas
+numpy
+bitsandbytes
+optuna
+rouge-score
+seqeval

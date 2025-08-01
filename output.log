@@ -1,0 +1,36 @@
+========================================
+
+Starting new trial with hyperparameters: 
+    num_epochs: 12
+    batch_size: 1
+    learning_rate: 4e-05
+    warmup_ratio: 0.02
+    weight_decay: 0.002
+    lora_r: 32
+    lora_alpha: 32
+    lora_dropout: 0.007979638733989103
+    grad_accum_steps: 1
+========================================
+
+========================================
+
+Starting new trial with hyperparameters: 
+    num_epochs: 12
+    batch_size: 1
+    learning_rate: 4e-05
+    warmup_ratio: 0.02
+    weight_decay: 0.002
+    lora_r: 32
+    lora_alpha: 32
+    lora_dropout: 0.007979638733989103
+    grad_accum_steps: 1
+========================================
+
+{'loss': 3.5017, 'grad_norm': 80.67601013183594, 'learning_rate': 2.840579710144928e-05, 'epoch': 0.17421602787456447}
+{'loss': 1.9908, 'grad_norm': 34.81401824951172, 'learning_rate': 3.999220230080709e-05, 'epoch': 0.34843205574912894}
+{'loss': 1.3089, 'grad_norm': 55.59100341796875, 'learning_rate': 3.994457171244389e-05, 'epoch': 0.5226480836236934}
+{'loss': 1.7118, 'grad_norm': 17.427188873291016, 'learning_rate': 3.9853745622949904e-05, 'epoch': 0.6968641114982579}
+{'loss': 1.5175, 'grad_norm': 9.785447120666504, 'learning_rate': 3.97199207414101e-05, 'epoch': 0.8710801393728222}
+[1;34mwandb[0m: 
+[1;34mwandb[0m: 🚀 View run [33mfresh-field-7[0m at: [34mhttps://wandb.ai/mason-dana-dakota-state-university/huggingface/runs/vq3ljdtm[0m
+[1;34mwandb[0m: Find logs at: [1;35mwandb/run-20250729_222335-vq3ljdtm/logs[0m

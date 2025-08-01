@@ -1,0 +1,506 @@
+========================================
+Epoch 1
+Hyperparameters:
+  num_epochs: 12
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 32
+  lora_alpha: 32
+  lora_dropout: 0.007979638733989103
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 0.9666777849197388
+  eval_accuracy: 0.8615232443125618
+  eval_precision: 0.8615232443125618
+  eval_recall: 0.8615232443125618
+  eval_f1: 0.8615232443125618
+  eval_session_acc: 0.4166666666666667
+  eval_rouge1: 0.7188992496338689
+  eval_precision_Execution: 0.7446808510638298
+  eval_recall_Execution: 0.9040590405904059
+  eval_f1_Execution: 0.8166666666666667
+  eval_precision_Persistence: 0.9901960784313726
+  eval_recall_Persistence: 0.8938053097345132
+  eval_f1_Persistence: 0.9395348837209302
+  eval_precision_Discovery: 0.9177330895795247
+  eval_recall_Discovery: 0.9400749063670412
+  eval_f1_Discovery: 0.9287696577243293
+  eval_precision_Impact: 0.7083333333333334
+  eval_recall_Impact: 0.7391304347826086
+  eval_f1_Impact: 0.723404255319149
+  eval_precision_Defense Evasion: 0.0
+  eval_recall_Defense Evasion: 0.0
+  eval_f1_Defense Evasion: 0.0
+  eval_precision_Harmless: 1.0
+  eval_recall_Harmless: 0.21739130434782608
+  eval_f1_Harmless: 0.35714285714285715
+  eval_precision_Other: 0.25
+  eval_recall_Other: 0.047619047619047616
+  eval_f1_Other: 0.08
+  eval_runtime: 115.6323
+  eval_samples_per_second: 8.743
+  eval_steps_per_second: 8.743
+  epoch: 1.0
+
+========================================
+Epoch 2
+Hyperparameters:
+  num_epochs: 12
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 32
+  lora_alpha: 32
+  lora_dropout: 0.007979638733989103
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 1.4472291469573975
+  eval_accuracy: 0.811078140454995
+  eval_precision: 0.811078140454995
+  eval_recall: 0.811078140454995
+  eval_f1: 0.811078140454995
+  eval_session_acc: 0.3888888888888889
+  eval_rouge1: 0.7065731057919037
+  eval_precision_Execution: 0.8304498269896193
+  eval_recall_Execution: 0.8856088560885609
+  eval_f1_Execution: 0.8571428571428571
+  eval_precision_Persistence: 0.5252525252525253
+  eval_recall_Persistence: 0.9203539823008849
+  eval_f1_Persistence: 0.6688102893890675
+  eval_precision_Discovery: 0.9660633484162896
+  eval_recall_Discovery: 0.799625468164794
+  eval_f1_Discovery: 0.875
+  eval_precision_Impact: 0.6538461538461539
+  eval_recall_Impact: 0.7391304347826086
+  eval_f1_Impact: 0.6938775510204082
+  eval_precision_Defense Evasion: 0.631578947368421
+  eval_recall_Defense Evasion: 0.9230769230769231
+  eval_f1_Defense Evasion: 0.75
+  eval_precision_Harmless: 0.6666666666666666
+  eval_recall_Harmless: 0.2608695652173913
+  eval_f1_Harmless: 0.375
+  eval_precision_Other: 0.2222222222222222
+  eval_recall_Other: 0.09523809523809523
+  eval_f1_Other: 0.13333333333333333
+  eval_runtime: 115.5619
+  eval_samples_per_second: 8.749
+  eval_steps_per_second: 8.749
+  epoch: 2.0
+
+========================================
+Epoch 1
+Hyperparameters:
+  num_epochs: 12
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 32
+  lora_alpha: 32
+  lora_dropout: 0.007979638733989103
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 1.0467171669006348
+  eval_accuracy: 0.7962413452027696
+  eval_precision: 0.7962413452027696
+  eval_recall: 0.7962413452027696
+  eval_f1: 0.7962413452027696
+  eval_session_acc: 0.4722222222222222
+  eval_rouge1: 0.7128671042826635
+  eval_precision_Execution: 0.7682539682539683
+  eval_recall_Execution: 0.8929889298892989
+  eval_f1_Execution: 0.825938566552901
+  eval_precision_Persistence: 0.9619047619047619
+  eval_recall_Persistence: 0.8938053097345132
+  eval_f1_Persistence: 0.926605504587156
+  eval_precision_Discovery: 0.9299781181619255
+  eval_recall_Discovery: 0.795880149812734
+  eval_f1_Discovery: 0.8577194752774975
+  eval_precision_Impact: 0.55
+  eval_recall_Impact: 0.4782608695652174
+  eval_f1_Impact: 0.5116279069767442
+  eval_precision_Defense Evasion: 0.1875
+  eval_recall_Defense Evasion: 0.6923076923076923
+  eval_f1_Defense Evasion: 0.29508196721311475
+  eval_precision_Harmless: 0.5
+  eval_recall_Harmless: 0.30434782608695654
+  eval_f1_Harmless: 0.3783783783783784
+  eval_precision_Other: 0.25
+  eval_recall_Other: 0.047619047619047616
+  eval_f1_Other: 0.08
+  eval_runtime: 114.798
+  eval_samples_per_second: 8.807
+  eval_steps_per_second: 8.807
+  epoch: 1.0
+
+========================================
+Epoch 2
+Hyperparameters:
+  num_epochs: 12
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 32
+  lora_alpha: 32
+  lora_dropout: 0.007979638733989103
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 1.5206387042999268
+  eval_accuracy: 0.7992087042532147
+  eval_precision: 0.7992087042532147
+  eval_recall: 0.7992087042532147
+  eval_f1: 0.7992087042532147
+  eval_session_acc: 0.4305555555555556
+  eval_rouge1: 0.7863566205912206
+  eval_precision_Execution: 0.7808219178082192
+  eval_recall_Execution: 0.8413284132841329
+  eval_f1_Execution: 0.8099467140319716
+  eval_precision_Persistence: 0.5405405405405406
+  eval_recall_Persistence: 0.8849557522123894
+  eval_f1_Persistence: 0.6711409395973155
+  eval_precision_Discovery: 0.9510022271714922
+  eval_recall_Discovery: 0.799625468164794
+  eval_f1_Discovery: 0.8687690742624619
+  eval_precision_Impact: 0.6538461538461539
+  eval_recall_Impact: 0.7391304347826086
+  eval_f1_Impact: 0.6938775510204082
+  eval_precision_Defense Evasion: 0.6
+  eval_recall_Defense Evasion: 0.6923076923076923
+  eval_f1_Defense Evasion: 0.6428571428571429
+  eval_precision_Harmless: 0.7142857142857143
+  eval_recall_Harmless: 0.6521739130434783
+  eval_f1_Harmless: 0.6818181818181818
+  eval_precision_Other: 0.375
+  eval_recall_Other: 0.14285714285714285
+  eval_f1_Other: 0.20689655172413793
+  eval_runtime: 114.8465
+  eval_samples_per_second: 8.803
+  eval_steps_per_second: 8.803
+  epoch: 2.0
+
+========================================
+Epoch 3
+Hyperparameters:
+  num_epochs: 12
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 32
+  lora_alpha: 32
+  lora_dropout: 0.007979638733989103
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 1.3160101175308228
+  eval_accuracy: 0.8298714144411474
+  eval_precision: 0.8298714144411474
+  eval_recall: 0.8298714144411474
+  eval_f1: 0.8298714144411474
+  eval_session_acc: 0.4861111111111111
+  eval_rouge1: 0.7483122055467948
+  eval_precision_Execution: 0.82
+  eval_recall_Execution: 0.9077490774907749
+  eval_f1_Execution: 0.861646234676007
+  eval_precision_Persistence: 0.5586592178770949
+  eval_recall_Persistence: 0.8849557522123894
+  eval_f1_Persistence: 0.684931506849315
+  eval_precision_Discovery: 0.9431578947368421
+  eval_recall_Discovery: 0.8389513108614233
+  eval_f1_Discovery: 0.88800792864222
+  eval_precision_Impact: 0.68
+  eval_recall_Impact: 0.7391304347826086
+  eval_f1_Impact: 0.7083333333333334
+  eval_precision_Defense Evasion: 0.9473684210526315
+  eval_recall_Defense Evasion: 0.6923076923076923
+  eval_f1_Defense Evasion: 0.8
+  eval_precision_Harmless: 1.0
+  eval_recall_Harmless: 0.30434782608695654
+  eval_f1_Harmless: 0.4666666666666667
+  eval_precision_Other: 0.5
+  eval_recall_Other: 0.14285714285714285
+  eval_f1_Other: 0.2222222222222222
+  eval_runtime: 114.5116
+  eval_samples_per_second: 8.829
+  eval_steps_per_second: 8.829
+  epoch: 3.0
+
+========================================
+Epoch 4
+Hyperparameters:
+  num_epochs: 12
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 32
+  lora_alpha: 32
+  lora_dropout: 0.007979638733989103
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 1.0120478868484497
+  eval_accuracy: 0.8496538081107814
+  eval_precision: 0.8496538081107814
+  eval_recall: 0.8496538081107814
+  eval_f1: 0.8496538081107814
+  eval_session_acc: 0.5555555555555556
+  eval_rouge1: 0.7959559788403987
+  eval_precision_Execution: 0.9003690036900369
+  eval_recall_Execution: 0.9003690036900369
+  eval_f1_Execution: 0.9003690036900369
+  eval_precision_Persistence: 0.5638297872340425
+  eval_recall_Persistence: 0.9380530973451328
+  eval_f1_Persistence: 0.7043189368770764
+  eval_precision_Discovery: 0.9638297872340426
+  eval_recall_Discovery: 0.848314606741573
+  eval_f1_Discovery: 0.9023904382470119
+  eval_precision_Impact: 0.7083333333333334
+  eval_recall_Impact: 0.7391304347826086
+  eval_f1_Impact: 0.723404255319149
+  eval_precision_Defense Evasion: 0.7058823529411765
+  eval_recall_Defense Evasion: 0.9230769230769231
+  eval_f1_Defense Evasion: 0.8
+  eval_precision_Harmless: 0.7857142857142857
+  eval_recall_Harmless: 0.4782608695652174
+  eval_f1_Harmless: 0.5945945945945946
+  eval_precision_Other: 0.4
+  eval_recall_Other: 0.19047619047619047
+  eval_f1_Other: 0.25806451612903225
+  eval_runtime: 114.2006
+  eval_samples_per_second: 8.853
+  eval_steps_per_second: 8.853
+  epoch: 4.0
+
+========================================
+Epoch 5
+Hyperparameters:
+  num_epochs: 12
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 32
+  lora_alpha: 32
+  lora_dropout: 0.007979638733989103
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 1.2408758401870728
+  eval_accuracy: 0.8456973293768546
+  eval_precision: 0.8456973293768546
+  eval_recall: 0.8456973293768546
+  eval_f1: 0.8456973293768546
+  eval_session_acc: 0.5694444444444444
+  eval_rouge1: 0.7974006129253696
+  eval_precision_Execution: 0.8786764705882353
+  eval_recall_Execution: 0.8819188191881919
+  eval_f1_Execution: 0.8802946593001841
+  eval_precision_Persistence: 0.9811320754716981
+  eval_recall_Persistence: 0.9203539823008849
+  eval_f1_Persistence: 0.9497716894977168
+  eval_precision_Discovery: 0.932
+  eval_recall_Discovery: 0.8726591760299626
+  eval_f1_Discovery: 0.9013539651837524
+  eval_precision_Impact: 0.8947368421052632
+  eval_recall_Impact: 0.7391304347826086
+  eval_f1_Impact: 0.8095238095238095
+  eval_precision_Defense Evasion: 0.1875
+  eval_recall_Defense Evasion: 0.6923076923076923
+  eval_f1_Defense Evasion: 0.29508196721311475
+  eval_precision_Harmless: 0.7142857142857143
+  eval_recall_Harmless: 0.43478260869565216
+  eval_f1_Harmless: 0.5405405405405406
+  eval_precision_Other: 0.25
+  eval_recall_Other: 0.047619047619047616
+  eval_f1_Other: 0.08
+  eval_runtime: 113.9278
+  eval_samples_per_second: 8.874
+  eval_steps_per_second: 8.874
+  epoch: 5.0
+
+========================================
+Epoch 6
+Hyperparameters:
+  num_epochs: 12
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 32
+  lora_alpha: 32
+  lora_dropout: 0.007979638733989103
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 1.4980629682540894
+  eval_accuracy: 0.8288822947576657
+  eval_precision: 0.8288822947576657
+  eval_recall: 0.8288822947576657
+  eval_f1: 0.8288822947576657
+  eval_session_acc: 0.5555555555555556
+  eval_rouge1: 0.7432804230421373
+  eval_precision_Execution: 0.8114478114478114
+  eval_recall_Execution: 0.8892988929889298
+  eval_f1_Execution: 0.8485915492957746
+  eval_precision_Persistence: 0.5606060606060606
+  eval_recall_Persistence: 0.9823008849557522
+  eval_f1_Persistence: 0.7138263665594855
+  eval_precision_Discovery: 0.9646017699115044
+  eval_recall_Discovery: 0.8164794007490637
+  eval_f1_Discovery: 0.8843813387423936
+  eval_precision_Impact: 0.7727272727272727
+  eval_recall_Impact: 0.7391304347826086
+  eval_f1_Impact: 0.7555555555555555
+  eval_precision_Defense Evasion: 0.9285714285714286
+  eval_recall_Defense Evasion: 1.0
+  eval_f1_Defense Evasion: 0.9629629629629629
+  eval_precision_Harmless: 0.6
+  eval_recall_Harmless: 0.2608695652173913
+  eval_f1_Harmless: 0.36363636363636365
+  eval_precision_Other: 0.25
+  eval_recall_Other: 0.047619047619047616
+  eval_f1_Other: 0.08
+  eval_runtime: 114.4595
+  eval_samples_per_second: 8.833
+  eval_steps_per_second: 8.833
+  epoch: 6.0
+
+========================================
+Epoch 7
+Hyperparameters:
+  num_epochs: 12
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 32
+  lora_alpha: 32
+  lora_dropout: 0.007979638733989103
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 1.2588045597076416
+  eval_accuracy: 0.8615232443125618
+  eval_precision: 0.8615232443125618
+  eval_recall: 0.8615232443125618
+  eval_f1: 0.8615232443125618
+  eval_session_acc: 0.625
+  eval_rouge1: 0.8179887721339976
+  eval_precision_Execution: 0.9294117647058824
+  eval_recall_Execution: 0.8745387453874539
+  eval_f1_Execution: 0.9011406844106464
+  eval_precision_Persistence: 0.5555555555555556
+  eval_recall_Persistence: 0.9734513274336283
+  eval_f1_Persistence: 0.707395498392283
+  eval_precision_Discovery: 0.9605809128630706
+  eval_recall_Discovery: 0.8670411985018727
+  eval_f1_Discovery: 0.9114173228346457
+  eval_precision_Impact: 0.7083333333333334
+  eval_recall_Impact: 0.7391304347826086
+  eval_f1_Impact: 0.723404255319149
+  eval_precision_Defense Evasion: 0.896551724137931
+  eval_recall_Defense Evasion: 1.0
+  eval_f1_Defense Evasion: 0.9454545454545454
+  eval_precision_Harmless: 0.8823529411764706
+  eval_recall_Harmless: 0.6521739130434783
+  eval_f1_Harmless: 0.75
+  eval_precision_Other: 0.5
+  eval_recall_Other: 0.14285714285714285
+  eval_f1_Other: 0.2222222222222222
+  eval_runtime: 114.1158
+  eval_samples_per_second: 8.859
+  eval_steps_per_second: 8.859
+  epoch: 7.0
+
+========================================
+Epoch 8
+Hyperparameters:
+  num_epochs: 12
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 32
+  lora_alpha: 32
+  lora_dropout: 0.007979638733989103
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 1.330153226852417
+  eval_accuracy: 0.8625123639960435
+  eval_precision: 0.8625123639960435
+  eval_recall: 0.8625123639960435
+  eval_f1: 0.8625123639960435
+  eval_session_acc: 0.6527777777777778
+  eval_rouge1: 0.804648895551914
+  eval_precision_Execution: 0.936
+  eval_recall_Execution: 0.8634686346863468
+  eval_f1_Execution: 0.8982725527831094
+  eval_precision_Persistence: 0.5678391959798995
+  eval_recall_Persistence: 1.0
+  eval_f1_Persistence: 0.7243589743589743
+  eval_precision_Discovery: 0.9686847599164927
+  eval_recall_Discovery: 0.8689138576779026
+  eval_f1_Discovery: 0.9160908193484699
+  eval_precision_Impact: 0.7083333333333334
+  eval_recall_Impact: 0.7391304347826086
+  eval_f1_Impact: 0.723404255319149
+  eval_precision_Defense Evasion: 0.9285714285714286
+  eval_recall_Defense Evasion: 1.0
+  eval_f1_Defense Evasion: 0.9629629629629629
+  eval_precision_Harmless: 0.6296296296296297
+  eval_recall_Harmless: 0.7391304347826086
+  eval_f1_Harmless: 0.68
+  eval_precision_Other: 0.25
+  eval_recall_Other: 0.047619047619047616
+  eval_f1_Other: 0.08
+  eval_runtime: 114.0938
+  eval_samples_per_second: 8.861
+  eval_steps_per_second: 8.861
+  epoch: 8.0
+
+========================================
+Epoch 9
+Hyperparameters:
+  num_epochs: 12
+  batch_size: 1
+  learning_rate: 4e-05
+  warmup_ratio: 0.02
+  weight_decay: 0.002
+  lora_r: 32
+  lora_alpha: 32
+  lora_dropout: 0.007979638733989103
+  grad_accum_steps: 1
+Metrics:
+  eval_loss: 1.1525760889053345
+  eval_accuracy: 0.8644906033630069
+  eval_precision: 0.8644906033630069
+  eval_recall: 0.8644906033630069
+  eval_f1: 0.8644906033630069
+  eval_session_acc: 0.6527777777777778
+  eval_rouge1: 0.8136954003552995
+  eval_precision_Execution: 0.9291338582677166
+  eval_recall_Execution: 0.8708487084870848
+  eval_f1_Execution: 0.8990476190476191
+  eval_precision_Persistence: 0.5656565656565656
+  eval_recall_Persistence: 0.9911504424778761
+  eval_f1_Persistence: 0.7202572347266881
+  eval_precision_Discovery: 0.9667359667359667
+  eval_recall_Discovery: 0.8707865168539326
+  eval_f1_Discovery: 0.916256157635468
+  eval_precision_Impact: 0.7391304347826086
+  eval_recall_Impact: 0.7391304347826086
+  eval_f1_Impact: 0.7391304347826086
+  eval_precision_Defense Evasion: 0.9285714285714286
+  eval_recall_Defense Evasion: 1.0
+  eval_f1_Defense Evasion: 0.9629629629629629
+  eval_precision_Harmless: 0.7272727272727273
+  eval_recall_Harmless: 0.6956521739130435
+  eval_f1_Harmless: 0.7111111111111111
+  eval_precision_Other: 0.4
+  eval_recall_Other: 0.09523809523809523
+  eval_f1_Other: 0.15384615384615385
+  eval_runtime: 114.2262
+  eval_samples_per_second: 8.851
+  eval_steps_per_second: 8.851
+  epoch: 9.0
+

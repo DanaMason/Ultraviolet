@@ -14,9 +14,14 @@ import optuna
 import sys
 from transformers.trainer_utils import IntervalStrategy
 from accelerate import Accelerator
+import wandb
+from rouge_score import rouge_scorer
+from seqeval.metrics import classification_report, f1_score as seq_f1_score
+import numpy as np
 from transformers import (
     AutoTokenizer,
     AutoModelForSequenceClassification,
+    AutoModelForTokenClassification,
     TrainingArguments,
     Trainer,
     default_data_collator,
@@ -27,9 +32,9 @@ from transformers import (
 
 
 
-# Run like: 
+# Run using commands like: 
 #               source venv/bin/activate
-#               python mainOptimizer.py --do_optuna --n_trials 2 | tee output.log
+#               python mainOptimizerLPToken.py --do_optuna --n_trials 20 | tee output.log
 #               tmux new -s lora_session
 #               tmux attach -t lora_session
 
@@ -45,7 +50,7 @@ warnings.filterwarnings("ignore", message="Setting save_embedding_layers to True
 
 
 
-# LP Labels
+# LogPrecis Labels
 LABELS = ["Execution", "Persistence", "Discovery", "Impact", "Defense Evasion", "Harmless", "Other"]
 
 # Model Options
@@ -55,37 +60,37 @@ model_llama_3_8b = "meta-llama/Meta-Llama-3-8B"
 
 model = model_llama_3_8b   
 
-# For memory usage and setting the output to wandB (needs account)
+# For Memory usage and setting the output to WandB (needs account)
 
 os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "expandable_segments:True"
-os.environ["WANDB_MODE"] = "disabled"
+os.environ["WANDB_MODE"] = "online"
 
 # Takes in command-line level inputs (so you can send in a new hyperparameter X 
 # when running the program from command line (defaults are hardcoded)).
 
 def parse_args():
     parser = argparse.ArgumentParser(description="Fine-tune LLaMA-3 with QLoRA for MITRE ATT&CK tactic classification")
-    
+
     parser.add_argument("--model_name", type=str, default=model)
     parser.add_argument("--train_file", type=str, default="trainingLP.json")
     parser.add_argument("--val_file", type=str, default="validationLP.json")
     parser.add_argument("--output_dir", type=str, default="OptimizerOutputFinal")
-    parser.add_argument("--num_epochs", type=int, default=8)
-    parser.add_argument("--batch_size", type=int, default=1)      
-    parser.add_argument("--learning_rate", type=float, default=4e-5)
+    parser.add_argument("--num_epochs", type=int, default=12)
+    parser.add_argument("--batch_size", type=int, default=1)       
+    parser.add_argument("--learning_rate", type=float, default=4e-05)
     parser.add_argument("--warmup_ratio", type=float, default=0.02)
     parser.add_argument("--max_length", type=int, default=4096)  
-    parser.add_argument("--lora_r", type=int, default=16)         
-    parser.add_argument("--lora_alpha", type=int, default=32)     
-    parser.add_argument("--lora_dropout", type=float, default=0.05)
+    parser.add_argument("--lora_r", type=int, default=32)            
+    parser.add_argument("--lora_alpha", type=int, default=32)           
+    parser.add_argument("--lora_dropout", type=float, default=0.007979638733989103) 
     parser.add_argument("--seed", type=int, default=42)
     parser.add_argument("--weight_decay", type=float, default=0.002)
-    parser.add_argument("--early_stopping_patience", type=int, default=3)
-    parser.add_argument("--grad_accum_steps", type=int, default=1)       
-    parser.add_argument("--do_optuna", action="store_true", default=True) 
+    parser.add_argument("--early_stopping_patience", type=int, default=8)  
+    parser.add_argument("--grad_accum_steps", type=int, default=1)         
+    parser.add_argument("--do_optuna", action="store_true", default=False) 
     parser.add_argument("--lr_scheduler_type", type=str, default="cosine", choices=["linear", "cosine", "polynomial"])
-    parser.add_argument("--n_trials", type=int, default=50) 
-    
+    parser.add_argument("--n_trials", type=int, default=1) 
+
     return parser.parse_args()
 
 # Weighted Trainer subclass of HF's Trainer.
@@ -101,11 +106,15 @@ class WeightedTrainer(Trainer):
         labels = inputs.get("labels")
         outputs = model(**inputs)
         logits = outputs.logits
-        loss = F.cross_entropy(logits, labels, weight=self.class_weights)
-
+        loss = F.cross_entropy(
+            logits.view(-1, logits.size(-1)),   
+            labels.view(-1),                      
+            weight=self.class_weights,
+            ignore_index=-100
+        )
         if return_outputs:
             return loss, outputs
-        
+
         return loss
 
 # Cleanup function (mostly can be ignored)
@@ -143,11 +152,9 @@ class ResultsLoggerCallback(TrainerCallback):
 
             lines.append("")  
 
-            # Write to file
             with open(self.filename, "a") as f:
                 f.write('\n'.join(lines) + '\n')
 
-            # Print to console
             print('\n'.join(lines))
             sys.stdout.flush()
 
@@ -184,27 +191,36 @@ def main():
     #       [X, Y] = X or Y.              X, Y = X through Y.
     
     def optuna_hp_space(trial):
-        # trial_hparams["num_epochs"] = trial.suggest_int("num_epochs", 3, 6)  
-        # trial_hparams["lora_r"] = trial.suggest_categorical("lora_r", [2, 4]) 
-        # trial_hparams["lora_alpha"] = trial.suggest_categorical("lora_alpha", [4, 8, 16])                
-        # trial_hparams["lora_dropout"] = trial.suggest_float("lora_dropout", 0.0, 0.1)
-        # trial_hparams["grad_accum_steps"] = trial.suggest_categorical("grad_accum_steps", [1])  
-        # trial_hparams["batch_size"] = trial.suggest_categorical("batch_size", [1, 2]) 
-
-        # Change these hyperparameters for tuning ranges:
-
-        trial_hparams["num_epochs"] = trial.suggest_int("num_epochs", 3, 12)  
-        trial_hparams["lora_r"] = trial.suggest_categorical("lora_r", [2, 4, 8, 16, 32]) 
-        trial_hparams["lora_alpha"] = trial.suggest_categorical("lora_alpha", [2, 4, 8, 16, 32, 64])             
-        trial_hparams["lora_dropout"] = trial.suggest_float("lora_dropout", 0.0, 0.1)
+        trial_hparams["num_epochs"] = trial.suggest_int("num_epochs", 12, 12)  
+        trial_hparams["lora_r"] = trial.suggest_categorical("lora_r", [32]) 
+        trial_hparams["lora_alpha"] = trial.suggest_categorical("lora_alpha", [32])                  # Testing purposes
+        trial_hparams["lora_dropout"] = trial.suggest_float("lora_dropout", 0.007979638733989103, 0.007979638733989103)
         trial_hparams["grad_accum_steps"] = trial.suggest_categorical("grad_accum_steps", [1])  
         trial_hparams["batch_size"] = trial.suggest_categorical("batch_size", [1]) 
 
+        # Uncomment following:
+
+        # trial_hparams["num_epochs"] = trial.suggest_int("num_epochs", 3, 12)  
+        # trial_hparams["lora_r"] = trial.suggest_categorical("lora_r", [2, 4, 8, 16, 32]) 
+        # trial_hparams["lora_alpha"] = trial.suggest_categorical("lora_alpha", [2, 4, 8, 16, 32, 64])                  # Testing purposes
+        # trial_hparams["lora_dropout"] = trial.suggest_float("lora_dropout", 0.0, 0.1)
+        # trial_hparams["grad_accum_steps"] = trial.suggest_categorical("grad_accum_steps", [1])  
+        # trial_hparams["batch_size"] = trial.suggest_categorical("batch_size", [1]) 
+
+        # Uncomment":
+
         return {
-            "learning_rate": trial.suggest_float("learning_rate", 1e-6, 3e-4, log=True),    
+            "learning_rate": trial.suggest_float("learning_rate", 4e-05, 4e-05, log=True),    
             "per_device_train_batch_size": trial_hparams["batch_size"],
-            "warmup_ratio": trial.suggest_float("warmup_ratio", 0.01, 0.05),
-            "weight_decay": trial.suggest_float("weight_decay", 0.0, 0.05),
+            "warmup_ratio": trial.suggest_float("warmup_ratio", 0.02, 0.02),
+            "weight_decay": trial.suggest_float("weight_decay", 0.002, 0.002),
+
+            # Uncomment:
+
+            # "learning_rate": trial.suggest_float("learning_rate", 1e-6, 3e-4, log=True),    
+            # "per_device_train_batch_size": trial_hparams["batch_size"],
+            # "warmup_ratio": trial.suggest_float("warmup_ratio", 0.01, 0.05),
+            # "weight_decay": trial.suggest_float("weight_decay", 0.0, 0.05),
         }
 
     # Tokenizer setup and padding.
@@ -214,107 +230,88 @@ def main():
         tokenizer.add_special_tokens({"pad_token": "[PAD]"})
     tokenizer.pad_token_id = tokenizer.convert_tokens_to_ids(tokenizer.pad_token)
 
-    # Flattens and adds session ids.
+    # Creates dataset to be properly formatted.
 
-    def flatten_sessions_with_ids_and_context(filepath):
+    def build_token_dataset(inputs, labels, session_ids):
+        return Dataset.from_dict({
+            "input_ids": inputs,
+            "labels": labels,
+            "session_id": session_ids
+        })
+
+    # Flattens, tokenizes, and chunks datasets.
+
+    def flatten_and_tokenize_sessions(filepath, tokenizer, max_length=4096, stride=128):
+        
         with open(filepath, "r") as f:
             session_data = json.load(f)
 
-        flat = []
-        session_ids = []
-
-        for i, session in enumerate(session_data):
-            prev_cmds = []
-
-            for j, cmd in enumerate(session):
-                context = " | ".join([c["command"] for c in prev_cmds]) if prev_cmds else ""
-                flat_cmd = dict(cmd)  
-                flat_cmd["context"] = context
-                flat.append(flat_cmd)
-                session_ids.append(i)
-                prev_cmds.append(cmd)
-
-        return flat, session_ids, session_data
-
-    # Flatten the session-based files
-
-    train_data, train_session_ids, train_sessions = flatten_sessions_with_ids_and_context(args.train_file)
-    val_data, val_session_ids, val_sessions = flatten_sessions_with_ids_and_context(args.val_file)
-
-    # Setup for datasets and data
-
-    for d, sid in zip(train_data, train_session_ids):
-        d["session_id"] = sid
+        chunked_inputs = []
+        chunked_labels = []
+        chunked_session_ids = []
+        chunked_offsets = []  
         
-    for d, sid in zip(val_data, val_session_ids):
-        d["session_id"] = sid
+        for session_id, session in enumerate(session_data):
+            tokens = []
+            labels = []
 
-    ds = DatasetDict({
-        "train": Dataset.from_list(train_data),
-        "validation": Dataset.from_list(val_data)
-    })
+            # Tokenization
 
-    original_features = ds["train"].features
+            for cmd in session:
+                cmd_text = cmd["command"]
+                tactic = cmd["tactic"]
 
-    shared_features = Features({
-        **original_features,
-        "tactic": ClassLabel(names=LABELS),
-        "session_id": Value("int64"),
-        "context": Value("string")
-    })
+                cmd_tokens = tokenizer.tokenize(cmd_text)
+                tokens.extend(cmd_tokens)
+                label_id = LABELS.index(tactic)
+                labels.extend([label_id] * len(cmd_tokens))
+           
+            input_ids = tokenizer.convert_tokens_to_ids(tokens)
 
-    ds["train"] = ds["train"].cast(shared_features)
-    ds["validation"] = ds["validation"].cast(shared_features)
+            # Chunking
+
+            for i in range(0, len(input_ids), stride):
+                
+                chunk_input_ids = input_ids[i:i+max_length]
+                chunk_labels = labels[i:i+max_length]
+
+                pad_len = max_length - len(chunk_input_ids)
+                
+                if pad_len > 0:
+                    chunk_input_ids += [tokenizer.pad_token_id] * pad_len
+                    chunk_labels += [-100] * pad_len  
+                
+                chunked_inputs.append(chunk_input_ids)
+                chunked_labels.append(chunk_labels)
+                chunked_session_ids.append(session_id)
+                chunked_offsets.append((i, min(i+max_length, len(input_ids))))
+
+        return chunked_inputs, chunked_labels, chunked_session_ids, chunked_offsets
+
+    # Flattens/Tokenizes/Chunks the actual datasets being used.
+
+    train_inputs, train_labels, train_session_ids, _ = flatten_and_tokenize_sessions(args.train_file, tokenizer=tokenizer, max_length=args.max_length, stride=args.max_length//2)
+    val_inputs, val_labels, val_session_ids, _ = flatten_and_tokenize_sessions(args.val_file, tokenizer=tokenizer, max_length=args.max_length, stride=args.max_length//2)
+
+    # Setup for datasets
+
+    ds_train = build_token_dataset(train_inputs, train_labels, train_session_ids)
+    ds_val   = build_token_dataset(val_inputs, val_labels, val_session_ids)
+    
+    ds = DatasetDict({"train": ds_train, "validation": ds_val})
 
     # Computes class weights.
 
-    num_labels = ds["train"].features["tactic"].num_classes
+    num_labels = len(LABELS)
 
-    train_tactic_labels = ds["train"]["tactic"]
-    val_tactic_labels = ds["validation"]["tactic"]
-    val_session_ids_flat = ds["validation"]["session_id"]
-
-    counts = Counter(train_tactic_labels)
+    flat_train_labels = [l for sub in train_labels for l in sub if l != -100]
+    counts = Counter(flat_train_labels)
     total = sum(counts.values())
 
     class_weights = torch.tensor(
         [total / counts.get(i, 1) for i in range(num_labels)],
         dtype=torch.float32
     )
-
-    # Creates the actual input for the model.
-
-    def make_input(example):
-        fields = []
-        context = example.get("context", "")
-
-        if context.strip():
-            fields.append(f"Context: {context}")
-
-        command = example.get("command", "")
-
-        if command:
-            fields.append(f"Command: {command}")
-            
-        return " | ".join(fields)
-
-    # Preprocesses the data.
-
-    def preprocess_fn(examples):
-        texts = [make_input({k: examples[k][i] for k in examples if k != "session_id"}) for i in range(len(examples["command"]))]
-        
-        tokens = tokenizer(
-            texts,
-            truncation=True,
-            max_length=args.max_length
-        )
-
-        tokens["labels"] = examples["tactic"]
-        tokens["session_id"] = examples["session_id"]
-
-        return tokens
-
-    ds = ds.map(preprocess_fn, batched=True, remove_columns=[col for col in ds["train"].column_names if col not in ("session_id", "context")])
 
     dtype = torch.bfloat16 if torch.cuda.is_available() else torch.float32
 
@@ -324,7 +321,7 @@ def main():
         load_in_4bit=True,
         bnb_4bit_compute_dtype=torch.bfloat16,
         bnb_4bit_use_double_quant=True,
-        bnb_4bit_quant_type="nf4",
+        bnb_4bit_quant_type="nf4"
     )
 
     current_trial_number = [0]
@@ -332,55 +329,119 @@ def main():
     # Calculates the various metrics: accuracy, precision, recall,
     # f1, metrics per category, ROUGE-1, Binary Fidelity (session accuracy).
 
-
     def compute_metrics(p):
-        preds = p.predictions.argmax(-1)
-        labels = p.label_ids
+        preds = np.argmax(p.predictions, axis=2)
+        labels = p.label_ids    
+                          
+        if hasattr(p, "inputs") and p.inputs is not None and "session_id" in p.inputs:
+            session_ids = p.inputs["session_id"]
+        else:
+            session_ids = [0] * len(preds)
+
+        pred_label_list = []
+        true_label_list = []
+        pred_flat = []
+        true_flat = []
+        session_pred_dict = defaultdict(list)
+        session_true_dict = defaultdict(list)
 
         predicted_labels = [LABELS[int(i)] for i in preds.tolist()[:20]]
         ground_truth_labels = [LABELS[int(i)] for i in labels.tolist()[:20]]
 
-        precision, recall, f1, _ = precision_recall_fscore_support(
-            labels, preds, average="micro", zero_division=0
+        # Processes each token in every chunk to analyze
+
+        for pred_seq, label_seq, sid in zip(preds, labels, session_ids):
+            temp_pred = []
+            temp_true = []
+
+            for p_i, l_i in zip(pred_seq, label_seq):
+
+                if l_i == -100:  
+                    continue
+
+                temp_pred.append(LABELS[p_i])
+                temp_true.append(LABELS[l_i])
+
+                pred_flat.append(p_i)
+                true_flat.append(l_i)
+
+            pred_label_list.append(temp_pred)
+            true_label_list.append(temp_true)
+
+            session_pred_dict[sid].extend(temp_pred)
+            session_true_dict[sid].extend(temp_true)
+
+        # Calculate both averaged and per tactic:
+
+        precision_micro, recall_micro, f1_micro, _ = precision_recall_fscore_support(
+            true_flat, pred_flat, average="micro", zero_division=0
         )
-        acc = accuracy_score(labels, preds)
 
-        session_ids = val_session_ids_flat
+        acc = accuracy_score(true_flat, pred_flat)
 
-        sessions_pred = defaultdict(list)
-        sessions_label = defaultdict(list)
+        precision_per, recall_per, f1_per, _ = precision_recall_fscore_support(
+            true_flat, pred_flat, average=None, 
+            labels=list(range(len(LABELS))), zero_division=0
+        )
 
-        for sid, pred, label in zip(session_ids, preds.tolist(), labels.tolist()):
-            sessions_pred[sid].append(pred)
-            sessions_label[sid].append(label)
+        per_tactic_metrics = {}
+        for idx, label_name in enumerate(LABELS):
+            per_tactic_metrics[f"precision_{label_name}"] = precision_per[idx]
+            per_tactic_metrics[f"recall_{label_name}"] = recall_per[idx]
+            per_tactic_metrics[f"f1_{label_name}"] = f1_per[idx]
 
-        total_sessions = len(sessions_pred)
-        correct_sessions = 0
+        # Determines session accuracy (Binary Fidelity).
 
-        for sid in sessions_pred:
-
-            if sessions_pred[sid] == sessions_label[sid]:
-                correct_sessions += 1
+        total_sessions = len(session_pred_dict)
+        correct_sessions = sum(
+            session_pred_dict[sid] == session_true_dict[sid]
+            for sid in session_pred_dict
+        )
 
         session_accuracy = correct_sessions / total_sessions if total_sessions > 0 else 0
 
-        current_trial_number[0] += 1
+        # ROUGE-1 calculations
 
-        # Record Metrics to result_strs
+        scorer = rouge_scorer.RougeScorer(['rouge1'], use_stemmer=False)
+        rouge_1_scores = []
+
+        for sid in session_pred_dict:
+            pred_seq = ' '.join(session_pred_dict[sid])
+            true_seq = ' '.join(session_true_dict[sid])
+            score = scorer.score(true_seq, pred_seq)['rouge1'].fmeasure
+            rouge_1_scores.append(score)
+        
+        rouge_1_mean = sum(rouge_1_scores) / len(rouge_1_scores) if rouge_1_scores else 0.0
+
+        seqeval_f1 = seq_f1_score(true_label_list, pred_label_list)
+
+        # Logging and reporting results
 
         result_strs = []
 
         result_strs.append(f"Trial {current_trial_number[0]}")
-        
         hp_line = "Hyperparameters: " + ", ".join([
             f"{k}={v}" for k,v in trial_hparams.items()
         ])
+
         result_strs.append(hp_line)
+
+        result_strs.append("Per-tactic F1:")
+        for idx, label_name in enumerate(LABELS):
+            result_strs.append(f"  {label_name}: {f1_per[idx]:.4f}")
 
         metric_line = "Metrics: " + ", ".join([
             f"{k}={v:.6f}" if isinstance(v, float) else f"{k}={v}"
-            for k,v in {"accuracy": acc, "precision": precision, "recall": recall, "f1": f1, "session_acc": session_accuracy}.items()
+            for k,v in {
+                "accuracy": acc,
+                "precision": precision_micro,
+                "recall": recall_micro,
+                "f1": f1_micro,
+                "session_acc": session_accuracy,
+                "rouge1": rouge_1_mean,
+            }.items()
         ])
+
         result_strs.append(metric_line)
 
         pred_line = "Predicted: " + ", ".join(predicted_labels)
@@ -388,30 +449,34 @@ def main():
         
         gt_line = "Ground Truth: " + ", ".join(ground_truth_labels)
         result_strs.append(gt_line)
-
         result_strs.append("")
-
-        # Save results
 
         trial_results.append({
             'trial_number': current_trial_number[0],
-            'f1': f1,
+            'f1': f1_micro,
             'result_lines': result_strs
         })
 
-        return {
+        metrics = {
             "accuracy": acc,
-            "precision": precision,
-            "recall": recall,
-            "f1": f1,
-            "session_acc": session_accuracy
+            "precision": precision_micro,
+            "recall": recall_micro,
+            "f1": f1_micro,
+            "session_acc": session_accuracy,
+            "rouge1": rouge_1_mean,
+            "seqeval_f1": seqeval_f1,
         }
+
+        if wandb.run is not None:
+            wandb.log(metrics)
+
+        metrics.update(per_tactic_metrics)
+        return metrics
 
     # Initialize the model.
     # Includes a base model utilizing token classification.
     # Also has the LoRA setup information.
     # Finally, sets the model with all this information.
-
 
     def model_init():
         print("="*40 + "\n")
@@ -423,7 +488,7 @@ def main():
         print("="*40 + "\n")
         sys.stdout.flush()
 
-        base_model = AutoModelForSequenceClassification.from_pretrained(
+        base_model = AutoModelForTokenClassification.from_pretrained(
             args.model_name,
             num_labels=num_labels,
             torch_dtype=torch.bfloat16,
@@ -456,11 +521,11 @@ def main():
         learning_rate=trial_hparams.get("learning_rate", args.learning_rate),
         num_train_epochs=trial_hparams.get("num_epochs", args.num_epochs),
         eval_strategy="epoch",
-        save_strategy="no",        
+        save_strategy="epoch",         
         logging_strategy="steps",    
         logging_steps=50,
-        save_total_limit=0, 
-        load_best_model_at_end=False,  
+        save_total_limit=1, 
+        load_best_model_at_end=True,   
         metric_for_best_model="f1",
         greater_is_better=True,
         warmup_ratio=trial_hparams.get("warmup_ratio", args.warmup_ratio),
@@ -469,13 +534,13 @@ def main():
         bf16=torch.cuda.is_available(),
         fp16=False,
         seed=args.seed,
-        report_to=None,
-        logging_dir=None,   
-        run_name=None,  
+        report_to="wandb",
+        logging_dir=os.path.join(args.output_dir, "logs"),
+        run_name="qlora-llama3-classification",
         gradient_accumulation_steps=trial_hparams.get("grad_accum_steps", args.grad_accum_steps),
         label_names=["labels"],
         max_grad_norm=2.0,
-        ddp_find_unused_parameters=False 
+        ddp_find_unused_parameters=False
     )
 
     results_file = os.path.join(args.output_dir, "all_trials_report.txt")
@@ -510,7 +575,7 @@ def main():
         direction="maximize",
         n_trials=args.n_trials,
         hp_space=optuna_hp_space,
-        compute_objective=lambda metrics: metrics["eval_f1"],
+        compute_objective=lambda metrics: metrics["f1"],
         backend="optuna",
         study_name=study_name,
         )
@@ -518,17 +583,31 @@ def main():
         best_trial_dir = os.path.join(args.output_dir, f"run-{best_trial.trial_id}")
         clean_up_trials(args.output_dir, best_trial_dir)
 
+
     else:
         trainer.train()
+
+    # Saves best model.
+
+    best_model_path = trainer.state.best_model_checkpoint
+
+    if best_model_path is not None:
+        target_path = os.path.join(args.output_dir, "best_model")
+
+        if os.path.exists(target_path):
+            shutil.rmtree(target_path)
+
+        shutil.copytree(best_model_path, target_path)
+        print(f"Best model saved to: {target_path}")
     
     # Finally, report the best metrics and hyperparameters in a txt folder.
 
     if len(trial_results) > 0:
-        sorted_results = sorted(trial_results,key=lambda x: x['f1'],reverse=True) 
+        sorted_results = sorted(trial_results,key=lambda x: x['f1'],reverse=True)
 
         with open(os.path.join(args.output_dir,"all_trials_report.txt"),"w") as f:
             for r in sorted_results:
-
+                
                 for line in r['result_lines']:
                     f.write(line + "\n")
 
